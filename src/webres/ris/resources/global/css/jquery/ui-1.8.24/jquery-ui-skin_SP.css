@@ -1,0 +1,74 @@
+/*
+#-----------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-----------------------------------------------------------------------------
+*/
+
+/* INIZIO jquery-ui-skin_SP  */
+
+.ui-widget-header .ui-icon {background-image: url("/ris/resources/global/css/jquery/im/ui-1.8.24/ui-icons_d8e7f3_256x240.png");}
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url("/ris/resources/global/css/jquery/im/ui-1.8.24/ui-icons_217bc0_256x240.png");}
+
+/* TABS */
+.ui-helper-reset {line-height:1;}
+.ui-dialog {font-size:0.95em;}
+div.tabs ul.ui-tabs-nav {margin-left:0!important;margin-left:0}
+
+/* ACCORDION */
+.ui-accordion-group h4 a, 
+.ui-accordion-group h4 a:link, 
+.ui-accordion-group h4 a:active, 
+.ui-accordion-group h4 a:hover,
+.ui-accordion-group h4 a:visited {color:#44484B;}
+
+/* CALENDARIO */
+.ui-datepicker table th {background: none repeat scroll 0 0 #fff;color: #000;}
+.ui-datepicker table {border:0;}
+.ui-dialog .ui-widget-header, .ui-datepicker .ui-datepicker-header {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #061B2D;
+    background-image: -moz-linear-gradient(center top , #0B416C, #061B2D);
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    color: #fff;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-widget-content a.ui-state-default, .ui-widget-content a.ui-state-default:link, .ui-widget-content a.ui-state-default:visited, .ui-widget-content a.ui-state-default:hover, .ui-widget-content a.ui-state-default:active {background:#E9EBEA;background-image: -moz-linear-gradient(center top , #E9EBEA, #CCCCCC);border: 1px solid #ccc;}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-content a.ui-state-highlight, .ui-widget-content a.ui-state-highlight:link, .ui-widget-content a.ui-state-highlight:visited, .ui-widget-content a.ui-state-highlight:hover, .ui-widget-content a.ui-state-highlight:active {background:#ADBBC6; background-image: -moz-linear-gradient(center top , #ADBBC6, #ADBBC6);}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-content a.ui-state-active, .ui-widget-content a.ui-state-active:link, .ui-widget-content a.ui-state-active:visited, .ui-widget-content a.ui-state-active:hover, .ui-widget-content a.ui-state-active:active {background:#327CB9;background-image: -moz-linear-gradient(center top , #327CB9, #1A4B74);border: 1px solid #aaa;color:#fff!important;}
+
+/*DIALOG*/
+.ui-dialog div.content_table, 
+.ui-dialog div.content_caption, 
+.ui-dialog h4.caption, 
+.ui-dialog div.menuHome, 
+.ui-dialog div.tabs, 
+.ui-dialog div.tabSetPanel, 
+.ui-dialog div.step, 
+.ui-dialog div.conthstep {margin-left: 0;margin-right: 0;}
+.ui-dialog #CenterWrapper {background: none repeat scroll 0 0 transparent;border: 0;}
+.ui-dialog .tabs .pageContainer, .ui-dialog .tabs .content_table {padding: 8px;}
+.ui-dialog h4 {color:#1A4B74;border:0;
+background-color: transparent;
+background: -moz-linear-gradient(top,  transparent 0%, transparent 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,transparent), color-stop(100%,transparent)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  transparent 0%,transparent 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  transparent 0%,transparent 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  transparent 0%,transparent 100%); /* IE10+ */
+background: linear-gradient(to bottom,  transparent 0%,transparent 100%); /* W3C */
+filter:none ); /* IE6-8 */
+}
+.ui-dialog, .ui-dialog .ui-dialog-content {background: none repeat scroll 0 0 #E9EBEA;}
+.ui-dialog {border: 1px solid #5C6C7B;}
+.ui-dialog .ui-dialog-content {padding-top:1.5em}
+.ui-dialog table.formTable td, .ui-dialog table.formTableUniversal td {background-color: #fff; border-color: #D7D7D7;}
+.ui-dialog table, .ui-dialog table.formTable {border-left: 0;border-right: 0;}
+.ui-dialog .ui-tabs-panel h4, .ui-dialog .ui-tabs-panel p {padding-left: 0;padding-right: 0;}
+
+/* FINE jquery-ui-skin_SP  */

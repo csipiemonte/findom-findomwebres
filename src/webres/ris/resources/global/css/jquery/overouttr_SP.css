@@ -1,0 +1,14 @@
+/*
+#-----------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-----------------------------------------------------------------------------
+*/
+
+/* INIZIO overouttr_SP.css */
+
+table.myovertable tr th.hover, 
+table.myovertable tr td.hover {background-color:#B6D0DB;}
+
+/* FINE overouttr_SP.css */
+

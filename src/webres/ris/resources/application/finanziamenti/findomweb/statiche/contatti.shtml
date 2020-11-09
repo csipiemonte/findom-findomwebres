@@ -1,0 +1,51 @@
+<!-- 
+#-------------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-------------------------------------------------------------------------------
+-->
+
+</head>
+	<body>
+		<div id="page">
+			<div id="applicationArea">
+
+				<div id="contentPanel">
+                <div id="dialog_target">
+					<div id="CenterWrapper" class="floatWrapper">
+						<div id="centerPanel">
+							<div class="wrapper">
+								<!-- INIZIO CONTENUTO CENTER PANEL -->
+								
+                                <h3>Contatti</h3>
+                                
+								<!-- DIALOG PANEL -->
+								<div class="dialogPanel">
+
+								<div class="stdMessagePanel">			
+									<div class="feedInfo">
+									 <p>
+                                      Per assistenza all'applicaticavo, invia le tue segnalazioni alla casella di posta <a href="maito:HelpFP@csi.it"><strong>HelpFP@csi.it</strong></a></p>
+									</div>
+								</div>
+
+								</div>
+                                
+								<div class="commandPanel">
+								<div class="button left">
+                                    <span class="print_js"></span>
+								</div>
+								</div>
+
+								<!-- FINE CONTENUTO CENTER PANEL -->
+							</div>
+						</div>
+				  </div>
+                  
+                </div><!--/dialog-target--> 
+				</div><!--/contentPanel-->
+
+			</div><!-- FINE APPICATION AREA (OBBLIGATORIO) -->
+		</div><!-- FINE PAGE (OBBLIGATORIO) -->
+	</body>
+</html>

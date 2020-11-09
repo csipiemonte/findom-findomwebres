@@ -1,0 +1,284 @@
+/*
+#-----------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-----------------------------------------------------------------------------
+*/
+
+/*********  CENTER PANEL  *********/
+
+div.boxDX {float:right;width:48%;margin-left:10px;margin-bottom:16px;}
+div.boxSX {float:left;width:48%;margin-right:10px;margin-bottom:16px;}
+
+/* content_table racchiude contenuto che non ha pageContainer*/
+.pageContainer, .content_table {background:#fff;border:1px solid #A8B1B8;padding:15px;padding-bottom:7px;margin-bottom:8px;}
+.content_table {margin-bottom:16px;}
+/*stile che toglie lo sfondo a pageContainer x pagina "ricerca"*/
+.pageNoContainer {background:transparent;border:0;padding:0;}
+#CenterWrapper {border-top:10px solid #CCD1D7} /*no margin no padding x problemi di background*/
+
+/*problemi su ie6
+#centerPanel div.tabSetPanel div.pageContainer,
+#centerPanel div.tabs div.pageContainer {position:static!important;position:relative}
+#centerPanel div.tabSetPanel ul li.active,
+#centerPanel div.tabs .ui-tabs-nav li.ui-tabs-selected {position:relative!important;z-index:1000}*/
+
+/*inizio menu home + home con box*/
+.pageContainer.pageNoContainer {background:none;padding:0;border:0}
+.pageContainer.pageNoContainer div.menuHome {overflow:hidden;width:auto;clear:both;background-color:#fff;border:1px solid #CCD1D7}/*border x ie6*/
+.pageContainer.pageNoContainer div.menuHome h3 {padding-left:5px;margin-bottom:0;}
+.pageContainer.pageNoContainer #tabvert.tabs div.pageContainer {height:100px}
+
+.boxHome {overflow:hidden;width:auto;}
+.boxHome h4.caption {margin-top:0}
+.boxHome div.content_caption ul {padding:0;list-style: none;border:1px solid #fff}/*border x ie6*/
+.boxHome div.content_caption li {border:1px solid #fff}/*border x ie6*/
+.boxHome div.tabs .puls_tab a, .boxHome div.tabs .puls_tab a:link, .boxHome div.tabs .puls_tab a:active, .boxHome div.tabs .puls_tab a:hover, .boxHome div.tabs .puls_tab a:visited,
+.boxHome div.content_caption li a, .boxHome div.content_caption li a:link, .boxHome div.content_caption li a:active, .boxHome div.content_caption li a:hover, .boxHome div.content_caption li a:visited {padding-top:5px!important;padding-bottom:5px!important}
+
+.boxHome div.tabs .puls_tab {float:right}
+.boxHome div.tabs .puls_tab a, .boxHome div.tabs .puls_tab a:link, .boxHome div.tabs .puls_tab a:active, .boxHome div.tabs .puls_tab a:hover, .boxHome div.tabs .puls_tab a:visited {width:24px;padding-left:0px!important;padding-right:0px!important}
+
+/*voci di menu e sottomenu dell'homepage*/
+.sottoMenuHome h4 {font-size:1.3em;margin-bottom:0;}
+.menuHome h3 span.toggle_handle {margin-right:16px;display:block}/*quando js disabilitato x ytoggle*/
+.menuHome h3, .menuHome div.menu_link {margin-top:5px;}
+.menuHome h3 a:link, .menuHome h3 a:hover, .menuHome h3 a:active, .menuHome h3 a:visited {font-weight:lighter;
+text-transform:uppercase}
+
+.menuHome .menu_link {border-bottom:1px solid #D1D1D3;}
+.menuHome h3.menu_link {padding-bottom:5px}
+
+.boxHome div.tabs .puls_tab a, .boxHome div.tabs .puls_tab a:link, .boxHome div.tabs .puls_tab a:active, .boxHome div.tabs .puls_tab a:hover, .boxHome div.tabs .puls_tab a:visited,
+.boxHome div.content_caption li a, .boxHome div.content_caption li a:link, .boxHome div.content_caption li a:active, .boxHome div.content_caption li a:hover, .boxHome div.content_caption li a:visited,
+.menuHome h3 a:link, .menuHome h3 a:hover, .menuHome h3 a:active, .menuHome h3 a:visited,
+.sottoMenuHome h4 a:link, .sottoMenuHome h4 a:hover, .sottoMenuHome h4 a:active, .sottoMenuHome h4 a:visited {color:#333;text-decoration:none;display:block;background-repeat: no-repeat;background-image:url(/ris/resources/global_share/css/im/ico_menu_home.gif);
+background-position:0% 0%;padding:2px 16px 1px 40px;}
+
+.menuHome h3 span {display:block;background-repeat: no-repeat;background-image:url(/ris/resources/global_share/css/im/ico_menu_home.gif);
+background-position:0% 0%;padding:2px 16px 1px 40px;}
+
+.sottoMenuHome h4 a:link, .sottoMenuHome h4 a:hover, .sottoMenuHome h4 a:active, .sottoMenuHome h4 a:visited {background-position:0% 0%;padding:2px 16px 2px 39px;margin-left:0;}
+
+.boxHome div.content_caption ul li a:hover, .menuHome h3 a:hover {background-color:#E7ECF0;}
+.sottoMenuHome h4 a:hover {background-color:#FFF;}
+
+.menuHome p {padding-right:16px;margin-bottom:14px;}
+.sottoMenuHome p {margin-bottom:18px;}
+.sottoMenuHome {padding:20px 14px 5px 14px;margin-bottom:18px;margin-left:39px;
+background:#E7ECF0;border-top:1px solid #CFD3D6;border-right:2px solid #CFD3D6;
+border-bottom:2px solid #CFD3D6;border-left:1px solid #CFD3D6;}
+
+/*fine menu home*/
+
+/*problemi i66
+position, importante x ie6 (bugs x padding su #centerPanel)!! >> tolto per grossi problemi con list builder!!!
+#centerPanel h1, #centerPanel h2, #centerPanel h3, #centerPanel h4, #centerPanel h5, #centerPanel p, #centerPanel ul, #centerPanel li, #centerPanel dl, #centerPanel a {position:static!important;}*/
+
+/* PAGINAZIONE */
+.paging {width:100%;overflow: hidden;margin: 5px 0;font-size:0.95em;}
+.paging select {font-size:0.95em}
+.paging .pagingLeft {float: left;width:49%;}
+.paging .pagingRight {float: right;width:49%;text-align: right;}
+.paging .alt {position:absolute;left:-10000px;top:-10000px;width:0;height:0;overflow:hidden;clear:none;}
+.paging .pagingRight .pageNumbers {margin-left:6px}
+.paging .pagingRight .pageNumbers .currentPage {font-weight: bold;}
+span.previousPage a, span.nextPage a,
+span.previousPage a:link, span.nextPage a:link,
+span.previousPage a:visited, span.nextPage a:visited,
+span.previousPage a:hover, span.nextPage a:hover,
+span.previousPage a:active, span.nextPage a:active {text-decoration:none;}
+
+span.previousPage a,span.previousPage a:link,span.previousPage a:visited,span.previousPage a:hover, 
+span.previousPage a:active {padding-left:10px;margin-right:8px;background:transparent url(/ris/resources/global_share/css/im/ico_freccia_prec.gif) 0% 50% no-repeat;}
+span.nextPage a,span.nextPage a:link,span.nextPage a:visited,span.nextPage a:hover,span.nextPage a:active {padding-right:14px;margin-left:8px;background:transparent url(/ris/resources/global_share/css/im/ico_freccia_succ.gif) 100% 50% no-repeat;}
+
+span.pageDisPrev {padding-left:10px;margin-right:8px;background:transparent url(/ris/resources/global_share/css/im/ico_freccia_prec_dis.gif) 0% 50% no-repeat;}
+span.pageDisNext {padding-right:10px;margin-left:8px;background:transparent url(/ris/resources/global_share/css/im/ico_freccia_succ_dis.gif) 100% 50% no-repeat;}
+
+span.number  {margin-right:20px;}
+span.number a, span.number a:link,span.number a:visited, span.number a:hover, span.number a:active,
+span.number span.highlighted {padding-left:3px;padding-right:3px;}
+span.number span.highlighted {background:#FECA36;font-weight:bold}
+span.number a:hover {background:#FECA36;}
+
+/*spaziature elementi paginazione*/
+.paging .pageValue {margin-right:30px;}/*LAST CHANGE*/
+.paging .pageOption {margin-left:30px;}/*LAST CHANGE*/
+input.pageValueNum {width:2em;}
+input.pageValueFunction, input.pageValueFunction:hover, input.pageValueFunctionHover {background:transparent url(/ris/resources/global_share/css/im/ico_vai.gif) 100% 50% no-repeat;padding-right:16px;border:0 none;cursor:pointer;font-weight:bold;padding-top:2px}
+
+/*tabella dati*/
+table {width:100%;border-collapse:collapse;margin-bottom:8pxborder:1px solid #91A2B2;}
+table th, table td {border:1px solid #91A2B2;padding:5px;}
+table th {background-color:#E0E9F2;color:#444E56;text-align:left;}
+table td strong {color:#444E56;}
+table.noSpace {margin-bottom:0px;}/*se ha paginazione al fondo*/
+
+/*tabella form*/
+table.formTable {border:0;border-bottom:1px solid #D7D7D7;}
+table.formTable th, table.formTable td, table.formTableUniversal th, table.formTableUniversal td {border:0;border-bottom:1px solid #D7D7D7;vertical-align:top}
+table.formTable th, table.formTableUniversal th {background-color:#fff;text-align:right;font-weight:bold;padding-right:10px;}
+table.formTable td, table.formTableUniversal td {background-color:#fff;}
+table .short {width:20%;}
+table .medium {width:40%;}
+table .long {width:80%;}
+table td .error, table td .warning {border:1px solid red;} /*campo input errato*/
+span.txtError span {color:red;display:block;font-size:0.95em}/*tooltip*/
+table.formTable td.puls_inline input, table.formTable td.puls_inline select, 
+table.formTable td.puls_inline textarea, table.formTable input.noborder {float:none}
+table.formTable td div.check_element input {float:none}
+
+/*tabella dettaglio a righe*/
+div.detailTable h4 {border-bottom: 1px solid #98A0AB;color: #444E56;}
+div.detailTable table.formTable th, div.detailTable table.formTable td {border-color:#EBEBEB}
+
+input.fileBrowser {width:auto;}
+
+/*descrizione breve a fianco a TH*/
+span.shortDesc {font-weight:normal;font-size:0.95em;display:block;}
+table.myovertable span.shortDesc {display:inline-block}
+table.myovertable table.formTable span.shortDesc {display:block}
+
+/*formato tabella annidata espandibile*/
+table td.tabdetail {background-color:#FFFAE6;}
+table td.tabdetail table {border-bottom:0;border-right:0;}
+table td.tabdetail table th {background-color:#E0E9F2;}
+table td.tabdetail table td {background-color:transparent}
+table td.tabdetail table.formTable th, table td.tabdetail table.formTable td {background-color:transparent}
+
+/*tabella annidata espandibile a "cella"*/
+table td.detailCell {background-color:#fff;}
+table td.detailCell h5 { border-bottom: 1px solid #98A0AB;}
+table td.detailCell table {border:0;}
+table td.detailCell table th,
+table td.detailCell table td {border:0;background-color:transparent}
+table td.detailCell h4.caption {padding:0;margin:0;background:0;border:0;}
+table td.detailCell div.detailCellBox {padding:10px;}
+
+/*tabella no formTable annidata dentro a formTable*/
+table.formTable table th {background-color:#E0E9F2;text-align:left;}
+table.formTable table th, table.formTable table td {border:1px solid #91A2B2;padding:5px;}
+
+/*titoli visualizza/nascondi e contenitore (senza js)*/
+h4.caption {background:url("/ris/resources/global_share/css/jquery/im/ui-1.8.24/sf-default_accordion.jpg") repeat-x scroll 0 100% #FFFFFF;border-color:#ADB2B6;border-style:solid;border-width:1px;color:#555555;font-size:1em;margin:0;margin-top:10px;padding:8px 12px;}
+.content_caption {background-color:#FFFFFF;border-color:-moz-use-text-color #ADB2B6 #ADB2B6;
+border:1px solid #ADB2B6;border-style:none solid solid;border-width:medium 1px 1px;padding:10px 15px;}
+
+/*contestualizzazione navigazione*/
+.navigation input, .navigation a,
+.navigation a:link, .navigation a:hover,
+.navigation a:active, .navigation a:visited {background:#EBEFF0 url(/ris/resources/global_share/css/im/sfondo_pulsante_nav.gif) 50% 100% repeat-x;}
+.navigation span {background:#EBEFF0 url(/ris/resources/global_share/css/im/sfondo_pulsante_nav.gif) 50% 100% repeat-x;}
+.navigation span input, .navigation span a,
+.navigation span a:link, .navigation span a:hover,
+.navigation span a:active, .navigation span a:visited {background:none;}
+
+/*icone non in tabelle*/
+span.carica_grafico input, span.carica_grafico a, span.carica_grafico a:link, span.carica_grafico a:hover,
+span.carica_grafico a:active, span.carica_grafico a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_grafico.gif) 0 50% no-repeat;padding-left:20px;}
+span.filtri_tab input, span.filtri_tab a, span.filtri_tab a:link, span.filtri_tab a:hover,
+span.filtri_tab a:active, span.filtri_tab a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_filtri.gif) 0 50% no-repeat;padding-left:20px;}
+span.ruota_tab input, span.ruota_tab a, span.ruota_tab a:link, span.ruota_tab a:hover,
+span.ruota_tab a:active, span.ruota_tab a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_ruota.gif) 0 50% no-repeat;padding-left:20px;}
+
+/*stile pulsante elimina in tabella*/
+table span.cancel {border:0;}
+table span.cancel button, table span.cancel a, table span.cancel a:link, table span.cancel a:active, table span.cancel a:hover, table span.cancel a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_elimina.gif) 50% 50% no-repeat;padding-left:16px;}
+
+/*contestualizzazioni funzioni in TABELLE*/
+table span.cancel a, table span.cancel a:link, table span.cancel a:hover, 
+table span.cancel a:active, table span.cancel a:visited, 
+table span.print a, table span.print a:link, table span.print a:hover, 
+table span.print a:active, table span.print a:visited, 
+table span.esporta_xls a, table span.esporta_xls a:link, table span.esporta_xls a:hover,
+table span.esporta_xls a:active, table span.esporta_xls a:visited,
+table span.esporta_doc a, table span.esporta_doc a:link, table span.esporta_doc a:hover,
+table span.esporta_doc a:active, table span.esporta_doc a:visited,
+table span.esporta_pdf a, table span.esporta_pdf a:link, table span.esporta_pdf a:hover,
+table span.esporta_pdf a:active, table span.esporta_pdf a:visited,
+table span.detail a, table span.detail a:link, table span.detail a:hover, 
+table span.detail a:active, table span.detail a:visited,
+table span.edit a, table edit.send a:link, table edit.send a:hover, 
+table span.edit a:active, table edit.send a:visited, 
+table span.send a, table span.send a:link, table span.send a:hover, 
+table span.send a:active, table span.send a:visited, 
+table span.compilation a, table span.compilation a:link, table span.compilation a:hover, 
+table span.compilation a:active, table span.compilation a:visited, 
+table span.draft a, table span.draft a:link, table span.draft a:hover, 
+table span.draft a:active, table span.draft a:visited,
+table span.download a, table span.download a:link, table span.download a:hover, 
+table span.download a:active, table span.download a:visited  {display:inline-block;width:0;height:16px;/*margin-right:4px; problemi IE6*/}
+table span.edit button, table span.detail button,
+table span.cancel button {border:0;margin:0;padding:0;padding-top:16px;padding-left:14px;cursor:pointer;}
+
+/*contestualizzazione pulsanti in tabella*/
+table span.commandTable input, table span.commandTable a, table span.commandTable a:link, table span.commandTable a:active, table span.commandTable a:hover, table span.commandTable a:visited {margin:0;padding:2px 5px!important;padding:0;background:#EBEFF0 url(/ris/resources/global_share/css/im/sfondo_pulsante.gif) 50% 100% repeat-x;margin-left:3px;cursor:pointer;border-top:1px solid #a7b0b7;border-left:1px solid #838d99;border-right:1px solid #333d46;border-bottom:1px solid #000;color:#373C40;}
+table span.commandTable a, table span.commandTable a:link, table span.commandTable a:active, table span.commandTable a:hover, table span.commandTable a:visited {font-weight:normal;text-decoration:none;}
+table span.commandTable input.Hover, table span.commandTable input:hover, table span.commandTable a:hover {color:#5F6C7C}
+
+/*tab statici*/
+.tabSetPanel .titTab_hide {position:absolute;left:-10000px;top:-10000px;width:0;height:0;overflow:hidden;clear:none;}
+.tabSetPanel {/*position: relative;*/margin-bottom:8px}
+.tabSetPanel ul.tabSetNav, .tabSetPanel ul.tabSetNav li {border: 0;list-style: none;margin: 0;padding: 0;}
+.tabSetPanel ul.tabSetNav {color: #444E56;margin-left:0!important;margin-left:1px}
+.tabSetPanel ul.tabSetNav:after {clear: both;}
+.tabSetPanel ul.tabSetNav:before, .tabSetPanel ul.tabSetNav:after {content: "";display: table;}
+.tabSetPanel ul.tabSetNav li {margin-top: 3px;border: 1px solid #A8B1B8;
+border-bottom: 0!important;float: left;position: relative;white-space: nowrap;color: #44484B;	
+background: url("/ris/resources/global_share/css/jquery/im/ui-1.8.24/ui-bg_glass_75_e6e6e6_1x400.png") repeat-x scroll 50% 50% #E6E6E6;}
+.tabSetPanel ul.tabSetNav li a, 
+.tabSetPanel ul.tabSetNav li a:visited, 
+.tabSetPanel ul.tabSetNav li a:link, 
+.tabSetPanel ul.tabSetNav li a:hover, 
+.tabSetPanel ul.tabSetNav li a:active, 
+.tabSetPanel ul.tabSetNav li span.activeItem,
+.tabSetPanel ul.tabSetNav li.noActive span  {
+display: block;outline: 0 none;padding: 0.5em 1em; float: left;text-decoration: none; color: #44484B;font-weight: normal}
+.tabSetPanel ul.tabSetNav li span.activeItem  {padding: 0.7em 1em;}
+.tabSetPanel ul.tabSetNav li.noActive span {color: #aaa;}
+.tabSetPanel ul.tabSetNav li.active {background: none repeat scroll 0 0 #fff;border-bottom: 0 none;margin-top: 0;}
+
+.tabSetPanel ul.tabSetNav li {top: 1px;}
+*:first-child+html .tabSetPanel ul.tabSetNav li {top: 2px;}
+.tabSetPanel .pageContainer{margin:0;z-index:1;} /*per gli altri browser */
+*:first-child+html .tabSetPanel .pageContainer {margin:3.3em 0 0 0\9;} /*per IE7 */ 
+
+
+/*wizard*/
+div.step {margin:0;padding:0;text-align:left;width:100%;}
+div.step ul {border-left:1px solid #ccc;margin:5px 0 0;margin-left:0!important;margin-left:1px;overflow:hidden;padding:0;text-align:left;background:transparent url(im/wizard/bg_step_ul.jpg) repeat-x 0 100%;width:99.9%;}/*ridotto a 99.9 x IE6*/
+div.step li {background:transparent url(im/wizard/bg_tab_n.jpg) repeat-x scroll 0 0;display:block;
+float:left;font-size:0.9em;font-weight:bold;height:36px;margin:0;padding:0;border-top:1px solid #ccc;}
+div.step span, div.step a,div.step a:link,div.step a:active,div.step a:hover,div.step a:visited {background:transparent url(im/wizard/arrow_n_y.gif) no-repeat scroll right top;color:#565455;display:block;padding:12px 20px 12px 14px; font-weight:normal;}
+div.step span.vai, div.step a.vai,div.step a:link.vai,div.step a:active.vai,div.step a:visited.vai,
+div.step a:hover.vai {background:transparent url(im/wizard/arrow_n_n.gif) no-repeat scroll right top;}
+div.step li.ultimo {border-right:1px solid #ccc;}
+div.step li.attivo {background:#FFFFFF none repeat scroll 0 0;border-bottom:0}
+div.step li.attivo span, div.step li.attivo a,div.step li.attivo a:link,
+div.step li.attivo a:active,div.step li.attivo a:visited,div.step li.attivo a.hover {background:#fff url(im/wizard/arrow_y_n.gif) no-repeat scroll right top;z-index:1;}
+div.step li.ultimo span, div.step li.ultimo a,div.step li.ultimo a:link,div.step li.ultimo a:active,div.step li.ultimo a:visited,div.step li.ultimo a.hover {background:transparent none repeat scroll 0 0!important;}
+div.conthstep {border:1px solid #ccc;border-top:0px;clear:both; padding:8px; margin-bottom:16px;}
+
+/*specifici stili tabelle*/
+div.conthstep table {border-right:1px solid #91A2B2;}
+div.conthstep table.formTable {border-right:0}
+
+/*SPAZI*/
+
+/*pagragrafo 'criteri scelti' ricerca*/
+.criteri {margin-top:8px;margin-bottom:8px;}
+
+/*generici*/
+div.stdMessagePanel {margin-bottom:16px;}/*messaggi*/
+table, h4, .content_caption {margin-bottom:16px;}
+div.commandPanel, div.commandPanel, div.button_legend {padding-bottom:16px} /*pulsanti*/
+
+/*specifici posizione elementi*/
+div.spaceBottomPag, div.pageLower {margin-bottom:16px}/*paginazione sotto tabella*/
+div.noSpaceButton {padding-bottom:8px;}/*ultimi pulsanti*/
+div.topSpaceButton {margin-top:16px} /*solo per pulsanti che stanno dopo il caption + content caption*/
+.spaceTop {margin-top:16px;} /*elementi sotto all'area caption div, h3 xché quando si chiude il content caption non c'é spazio tra loro*/
+.noSpaceBottom {margin-bottom:0px!important;} /*ultimi elementi dentro content caption (simile a gestione pulsanti) */
+
+/*fine SPAZI*/

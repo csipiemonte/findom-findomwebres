@@ -1,0 +1,66 @@
+/*
+#-------------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-------------------------------------------------------------------------------
+*/
+
+/* INIZIO  jqtooltip_legenda.css */
+
+
+/*STATI di COMPILAZIONE*/
+.stato_non_compilato a.link_txt, .stato_non_compilato a.link_txt:link, .stato_non_compilato a.link_txt:active, .stato_non_compilato a.link_txt:hover, .stato_non_compilato a.link_txt:focus, .stato_non_compilato a.link_txt:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/stato_non_compilato.png")!important;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='/ris/resources/application/finanziamenti/findomweb/css/im/stato_non_compilato.png',
+sizingMethod='scale')!important;
+}
+
+.stato_compilato a.link_txt, .stato_compilato a.link_txt:link, .stato_compilato a.link_txt:active, .stato_compilato a.link_txt:hover, .stato_compilato a.link_txt:focus, .stato_compilato a.link_txt:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/stato_compilato.png")!important;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='/ris/resources/application/finanziamenti/findomweb/css/im/stato_compilato.png',
+sizingMethod='scale')!important;
+}
+
+.stato_in_corso a.link_txt, .stato_in_corso a.link_txt:link, .stato_in_corso a.link_txt:active, .stato_in_corso a.link_txt:hover, .stato_in_corso a.link_txt:focus, .stato_in_corso a.link_txt:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/stato_in_corso.png")!important;
+	
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='/ris/resources/application/finanziamenti/findomweb/css/im/stato_in_corso.png',
+sizingMethod='scale')!important;
+}
+
+/*STATO SEDI DOMANDA*/
+.stato_disponibile a.link_txt, .stato_disponibile a.link_txt:link, .stato_disponibile a.link_txt:active, .stato_disponibile a.link_txt:hover, .stato_disponibile a.link_txt:focus, .stato_disponibile a.link_txt:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/stato_disponibile.png")!important;
+	
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='/ris/resources/application/finanziamenti/findomweb/css/im/stato_disponibile.png',
+sizingMethod='scale');
+}
+
+.stato_assente a.link_txt, .stato_assente a.link_txt:link, .stato_assente a.link_txt:active, .stato_assente a.link_txt:hover, .stato_assente a.link_txt:focus, .stato_assente a.link_txt:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/stato_assente.png")!important;
+	
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='/ris/resources/application/finanziamenti/findomweb/css/im/stato_assente.png',
+sizingMethod='scale')!important;
+}
+
+.stato_non_compilato a.link_txt, .stato_non_compilato a.link_txt:link, .stato_non_compilato a.link_txt:active, .stato_non_compilato a.link_txt:hover, .stato_non_compilato a.link_txt:focus, .stato_non_compilato a.link_txt:visited,
+.stato_compilato a.link_txt, .stato_compilato a.link_txt:link, .stato_compilato a.link_txt:active, .stato_compilato a.link_txt:hover, .stato_compilato a.link_txt:focus, .stato_compilato a.link_txt:visited,
+.stato_in_corso a.link_txt, .stato_in_corso a.link_txt:link, .stato_in_corso a.link_txt:active, .stato_in_corso a.link_txt:hover, .stato_in_corso a.link_txt:focus, .stato_in_corso a.link_txt:visited {background-position: 50% 50%!important;border: 0!important;display: inline-block!important;margin: 0;padding: 0!important;/*width:100%;*/
+
+width:48px!important;height:48px!important;
+
+
+background-size:100% auto!important;
+
+background-size /*\**/: cover\9!important;
+background-image /*\**/: none\9!important;
+}
+
+
+
+/* FINE  jqtooltip_legenda.css */

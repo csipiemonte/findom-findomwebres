@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+#################################################################
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#################################################################
+-->
+<project basedir="." name="findomwebres" default="default">
+
+	<description>Build file del componente</description>
+	<property file="buildfiles/build.properties"/>
+
+	<target name="init" description="Inizializza lo script Ant">
+		<tstamp/>
+		<mkdir dir="${build}/temp" />
+		<mkdir dir="${dist}" />
+		<echo message="target: ${target}" />
+		<loadproperties srcFile="buildfiles/${target}.properties"/>
+	</target>
+
+	<target name="environment-config" description="Predispone le configurazioni dipendenti dall'ambiente" depends="init">
+		<copy todir="${build}/temp">
+			<fileset file="${src}/**" />
+		</copy>
+		<!-- risorse di canele e portale che non devono essere rilasciate, incluse per l'open source -->
+		<delete dir="${build}/temp/webres/ris/css/" />
+		<delete dir="${build}/temp/webres/ris/resources/global/" />
+		<delete dir="${build}/temp/webres/ris/resources/global_share/" />
+	</target>
+
+
+
+	<target name="distribution" depends="environment-config" description="crea la distribution per un dato target">
+		<mkdir dir="${build}/temp" />
+		<mkdir dir="${dist}/${target}" />
+
+		<echo message="====== Creating distribution for ${target} ..."/>
+		<echo message="====== Basedir: ${build} ..."/>
+
+		<tar tarfile="${dist}/${target}/${uiname}-${version}.tar" basedir="${build}/temp/webres/"/>
+
+		<delete dir="${build}/temp" />
+
+	</target>
+
+	<target name="clean-all" description="Rimuove le cartelle temporanee." depends="clean-dist, clean-temp"/>
+
+	<target name="clean-temp" description="Rimuove la cartella dei files temporanei di build.">
+		<delete dir="${build}/temp" />
+		<echo message="====== Directory ${build}\temp deleted"/>
+	</target>
+
+	<target name="clean-dist" description="Rimuove la cartella delle distribuzioni.">
+		<delete dir="${dist}"/>
+		<echo message="====== Directory ${dist} deleted"/>
+	</target>
+
+	<!-- -->
+	<!-- ############################################################# -->
+	<!-- # Target: default                                           # -->
+	<!-- ############################################################# -->
+	<!-- -->
+	<target name="default"
+  			description="Eseguire il build per l'environment specificato a linea di comando con -Dtarget=${target} o per tutti gli environment (se non specificato).">
+
+		<condition property="first-call" value="distribution">
+			<not>
+				<equals arg1="${target}" arg2="$${target}" />
+			</not>
+		</condition>
+
+		<condition property="first-call" value="all-targets">
+			<equals arg1="${target}" arg2="$${target}" />
+		</condition>
+
+		<echo message="target: ${server}" />
+		<echo message="target: ${target}" />
+		<echo message="first-call: ${first-call}" />
+
+		<antcall target="clean-all" />
+		<antcall target="${first-call}" />
+	</target>
+
+</project>

@@ -1,0 +1,61 @@
+/*
+#-----------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-----------------------------------------------------------------------------
+*/
+
+/* INIZIO  superfish-dropdown.css */
+
+/*** adding the class sf-navdrop in addition to sf-menu creates an all-horizontal nav-bar menu ***/
+
+.menuDropdown,
+ul.sf-navdrop {background: none #0153A9;}
+
+ul.sf-navdrop li.active-parent a.sf-with-ul,
+ul.sf-navdrop li.active-parent a.sf-with-ul:link,
+ul.sf-navdrop li.active-parent a.sf-with-ul:active,
+ul.sf-navdrop li.active-parent a.sf-with-ul:visited {background-image:none;background-color:#0B416C}/*082843*/
+
+ul.sf-navdrop li li {border-top:0}
+
+ul.sf-navdrop li.active-parent ul.active li a.sf-with-ul,
+ul.sf-navdrop li.active-parent ul.active li a.sf-with-ul:link,
+ul.sf-navdrop li.active-parent ul.active li a.sf-with-ul:active,
+ul.sf-navdrop li.active-parent ul.active li a.sf-with-ul:visited {background-color:#e9ebea;color:#000}
+
+ul.sf-navdrop li.active-parent ul.active li.sfHover a.sf-with-ul:hover, 
+ul.sf-navdrop li.active-parent li.sfHover a.sf-with-ul,
+ul.sf-navdrop li.active-parent li.sfHover a.sf-with-ul:link,
+ul.sf-navdrop li.active-parent li.sfHover a.sf-with-ul:hover,
+ul.sf-navdrop li.active-parent li.sfHover a.sf-with-ul:active,
+ul.sf-navdrop li.active-parent li.sfHover a.sf-with-ul:visited {background-color:#ccc;color:#333}
+
+ul.sf-navdrop li li#current span, 
+ul.sf-navdrop li li span.parent, 
+ul.sf-navdrop li li a, 
+ul.sf-navdrop li li a:link, 
+ul.sf-navdrop li li a:active, 
+ul.sf-navdrop li li a:hover, 
+ul.sf-navdrop li li a:visited,
+ul.sf-navdrop li li li#current span, 
+ul.sf-navdrop li li li span.parent, 
+ul.sf-navdrop li li li a, 
+ul.sf-navdrop li li li a:link, 
+ul.sf-navdrop li li li a:active, 
+ul.sf-navdrop li li li a:hover, 
+ul.sf-navdrop li li li a:visited {background-position: 4px 50%;}
+
+ul.sf-navdrop li li li#current span, 
+ul.sf-navdrop li li li a, 
+ul.sf-navdrop li li li a:link, 
+ul.sf-navdrop li li li a:active, 
+ul.sf-navdrop li li li a:visited {padding-left: 15px;}
+
+ul.sf-navdrop li.sfHover li.sfHover a.sf-with-ul, 
+ul.sf-navdrop li.sfHover li.sfHover a.sf-with-ul:link, 
+ul.sf-navdrop li.sfHover li.sfHover a.sf-with-ul:active,
+ul.sf-navdrop li.sfHover li.sfHover a.sf-with-ul:hover, 
+ul.sf-navdrop li.sfHover li.sfHover a.sf-with-ul:visited {background-image: url("/ris/resources/global/css/jquery/im/superfish/ico_menu_2liv_parent.gif");}
+
+/* FINE  superfish-dropdown.css */

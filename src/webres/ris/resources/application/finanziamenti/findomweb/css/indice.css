@@ -1,0 +1,217 @@
+/*
+#-----------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-----------------------------------------------------------------------------
+*/
+
+/* INDICE SKINS DEL SERVIZIO ' GESTIONE DOMANDE ' */
+
+@import url(/ris/resources/global_share/css/struttura.css);
+@import url(/ris/resources/global_share/css/center_panel.css);
+
+/*SOVRASCRITTURA SP*/
+@import url(/ris/resources/global/css/struttura_SP.css);
+@import url(/ris/resources/global/css/center_panel_SP.css);
+
+
+/* !!!!!  COLLEGARE IL PROPRIO SKIN DEL SERVIZIO */
+@import url(/ris/resources/application/finanziamenti/findomweb/css/skin.css);
+
+
+/******DIFFERENZE CON DOMANDA********/
+
+
+/*GESTIONE TABELLEEEEE*/
+table#idlistaDomande th[scope=row] { width:150px!important;}
+table#idlistaDomande td {width:auto!important}
+
+table#dettaglio_sedi_selezionate th[scope=row] { width:80px!important;}
+table#dettaglio_sedi_selezionate td {width:auto!important}
+
+
+/***************FINE DIFFERENZE***************/
+
+.content_caption.indice div.stdMessagePanel div.feedInfo {padding-top:8px;padding-bottom:8px;padding-right:8px;}
+.content_caption.indice div.stdMessagePanel div.feedInfo .boxDX { margin-bottom:8px;}
+.content_caption.indice div.stdMessagePanel div.feedInfo .boxDX ul {margin-top:3px;}
+div.stdMessagePanel div.feedInfo {background-position: 22px 10px;}
+
+span.esporta_xls input, span.esporta_xls a, span.esporta_xls a:link, span.esporta_xls a:hover, span.esporta_xls a:active, span.esporta_xls a:visited { padding-left: 20px;}
+
+table span.esporta_pdf input, table span.esporta_pdf a, table span.esporta_pdf a:link, table span.esporta_pdf a:hover, table span.esporta_pdf a:active, table span.esporta_pdf a:visited,
+table span.cancel a, table span.cancel a:link, table span.cancel a:hover, table span.cancel a:active, table span.cancel a:visited, 
+table span.invalidate a, table span.invalidate a:link, table span.invalidate a:hover, table span.invalidate a:active, table span.invalidate a:visited, 
+table span.print a, table span.print a:link, table span.print a:hover, table span.print a:active, table span.print a:visited, 
+table span.richiestaattiva a, table span.richiestaattiva a:link, table span.richiestaattiva a:hover, table span.richiestaattiva a:active, table span.richiestaattiva a:visited, 
+table span.richiestachiusa a, table span.richiestachiusa a:link, table span.richiestachiusa a:hover, table span.richiestachiusa a:active, table span.richiestachiusa a:visited, 
+table span.upload a, table span.upload a:link, table span.upload a:hover, table span.upload a:active, table span.upload a:visited,
+table span.uploadNera a, table span.uploadNera a:link, table span.uploadNera a:hover, table span.uploadNera a:active, table span.uploadNera a:visited,
+table span.esporta_xls a, table span.esporta_xls a:link, table span.esporta_xls a:hover, table span.esporta_xls a:active, table span.esporta_xls a:visited, 
+table span.esporta_doc a, table span.esporta_doc a:link, table span.esporta_doc a:hover, table span.esporta_doc a:active, table span.esporta_doc a:visited, 
+table span.esporta_pdf a, table span.esporta_pdf a:link, table span.esporta_pdf a:hover, table span.esporta_pdf a:active, table span.esporta_pdf a:visited, 
+/*table span.detail a, table span.detail a:link, table span.detail a:hover, table span.detail a:active, table span.detail a:visited, */
+table span.edit a, table edit.send a:link, table edit.send a:hover, table span.edit a:active, table edit.send a:visited, 
+table span.send a, table span.send a:link, table span.send a:hover, table span.send a:active, table span.send a:visited, 
+table span.compilation a, table span.compilation a:link, table span.compilation a:hover, table span.compilation a:active, table span.compilation a:visited, 
+table span.draft a, table span.draft a:link, table span.draft a:hover, table span.draft a:active, table span.draft a:visited, 
+table span.download a, table span.download a:link, table span.download a:hover, table span.download a:active, table span.download a:visited
+{
+width:30px!important;height:30px!important;
+
+background-size:100% 100%!important;
+background-size /*\**/: cover\9!important;
+background-image /*\**/: none\9!important;
+
+padding-left:0!important;}
+
+table span.save input, table span.save a, table span.save a:link, table span.save a:hover, table span.save a:active, table span.save a:visited {width:18px!important;height:18px!important;background-size:100% 100%!important;padding-left:0!important;float:right;}
+table span.addrows input, table span.addrows a, table span.addrows a:link, table span.addrows a:hover, table span.addrows a:active, table span.addrows a:visited {width:18px!important;height:18px!important;background-size:100% 100%!important;padding-left:0!important;float:right;}
+
+span.send input, span.send a, span.send a:link, span.send a:hover, span.send a:active, span.send a:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_send.png");
+    padding-left: 0;
+    padding-top: 0;
+}
+
+span.detail input, span.detail button, span.detail a, span.detail a:link, span.detail a:hover, span.detail a:active, span.detail a:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_detail_domanda.png");
+		
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='/ris/resources/application/finanziamenti/findomweb/css/im/ico_detail_domanda.png',
+sizingMethod='scale');
+    padding-left: 0;
+}
+
+table span.cancel button, table span.cancel a, table span.cancel a:link, table span.cancel a:active, table span.cancel a:hover, table span.cancel a:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_trash.png");
+    padding-left: 0;
+}
+
+table span.invalidate a, table span.invalidate a:link, table span.invalidate a:hover, table span.invalidate a:active, table span.invalidate a:visited,
+ span.invalidate a, span.invalidate a:link, span.invalidate a:hover, span.invalidate a:active, span.invalidate a:visited {
+    background: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_invalida_domanda.png") no-repeat scroll 50% 50% !important;
+    display: inline-block;
+   width:22px!important;
+   height:27px!important;
+} 
+
+span.print input, span.print button, span.print a, span.print a:link, span.print a:hover, span.print a:active, span.print a:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_print.png")!important;
+    padding-left: 0;
+}
+
+span.richiestaattiva input, span.richiestaattiva button, span.richiestaattiva a, span.richiestaattiva a:link, span.richiestaattiva a:hover, span.richiestaattiva a:active, span.richiestaattiva a:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/richiesta_attiva.png")!important;
+	display: inline-block;
+    padding-left: 0;
+}
+
+span.richiestachiusa input, span.richiestachiusa button, span.richiestachiusa a, span.richiestachiusa a:link, span.richiestachiusa a:hover, span.richiestachiusa a:active, span.richiestachiusa a:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/richiesta_chiusa.png")!important;
+	display: inline-block;
+    padding-left: 0;
+}
+
+span.upload input, span.upload button, span.upload a, span.upload a:link, span.upload a:hover, span.upload a:active, span.upload a:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/upload.png")!important;
+    padding-left: 0; display:inline-block;
+}
+
+span.download input, span.download button, span.download a, span.download a:link, span.download a:hover, span.download a:active, span.download a:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/download.png")!important;
+    padding-left: 0; display:inline-block;
+}
+
+
+span.uploadNera input, span.uploadNera button, span.uploadNera a, span.uploadNera a:link, span.uploadNera a:hover, span.uploadNera a:active, span.uploadNera a:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_uploadNera.jpg")!important;
+    padding-left: 0;
+}
+
+table span.autore a, table span.autore a:link, table span.autore a:hover, table span.autore a:active, table span.autore a:visited,
+ span.autore a, span.autore a:link, span.autore a:hover, span.autore a:active, span.autore a:visited {
+    background: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_author.png") 50% 0% no-repeat !important;
+    height: 17px !important;
+   display: inline-block;
+   width:29px!important;height:29px!important;
+
+background-size:100% 100%!important;
+background-size /*\**/: cover\9!important;
+background-image /*\**/: none\9!important;
+
+} 
+
+span.edit input, span.edit button, span.edit a, span.edit a:link, span.edit a:hover, span.edit a:active, span.edit a:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_edit.png");
+    padding-left: 0;
+    padding-top: 0;
+}
+
+table span.save input, table span.save a, table span.save a:link, table span.save a:hover, table span.save a:active, table span.save a:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_save.png");
+	padding:0
+}
+
+table span.addrows input, table span.addrows a, table span.addrows a:link, table span.addrows a:hover, table span.addrows a:active, table span.addrows a:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_add.png");
+	padding:0
+}
+
+span.esporta_pdf input, span.esporta_pdf a, span.esporta_pdf a:link, span.esporta_pdf a:hover, span.esporta_pdf a:active, span.esporta_pdf a:visited {
+	background: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_pdf.png");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+       src='/ris/resources/application/finanziamenti/findomweb/css/im/ico_pdf.png',
+       sizingMethod='scale');}
+
+/*icone istruttoria*/
+span.detail input, span.detail button, span.detail a, span.detail a:link, span.detail a:hover, span.detail a:active, span.detail a:visited {
+	background: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_detail_domanda.png") no-repeat scroll 0 50% transparent;
+	   width:22px!important;
+   height:27px!important;}
+
+span.detail_istruttoria a, span.detail_istruttoria a:link, span.detail_istruttoria a:hover, span.detail_istruttoria a:active, span.detail_istruttoria a:visited {
+	background: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_detail_domanda_istruttoria.png") no-repeat scroll 0 50% transparent
+	
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='/ris/resources/application/finanziamenti/findomweb/css/im/ico_detail_domanda_istruttoria.png',
+sizingMethod='scale');	
+	}
+
+span.detail_istruttoria_contenuti a, span.detail_istruttoria_contenuti a:link, span.detail_istruttoria_contenuti a:hover, span.detail_istruttoria_contenuti a:active, span.detail_istruttoria_contenuti a:visited {
+	background: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_detail_contenuti_istruttoria.png") no-repeat scroll 0 50% transparent;
+	
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='/ris/resources/application/finanziamenti/findomweb/css/im/ico_detail_contenuti_istruttoria.png',
+sizingMethod='scale');
+
+}
+
+span.ui-datepicker-trigger,
+span.ui-datepicker-trigger-disabled {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_calendar.png")!important;
+    border: 0 solid red!important;
+    display: inline-block;
+    height: 19px;
+    padding: 0 !important;
+    width: 18px;
+}
+
+span.ui-datepicker-trigger {background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_calendar.png")!important;}
+span.ui-datepicker-trigger-disabled {background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_calendar_disabled.png")!important;}
+
+a.link_txt, a.link_txt:link, a.link_txt:active, a.link_txt:hover, a.link_txt:focus, a.link_txt:visited {
+    border: 0 solid red!important;
+    display: inline-block!important;
+    height: 18px!important;
+    width: 18px!important;
+	padding:0!important;
+background-size:100% 100%!important;
+background-size /*\**/: cover\9!important;
+background-image: url('/ris/resources/application/finanziamenti/findomweb/css/im/ico_help.png')!important;
+background-image /*\**/: none\9!important;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='/ris/resources/application/finanziamenti/findomweb/css/im/ico_help.png',
+sizingMethod='scale');
+
+}

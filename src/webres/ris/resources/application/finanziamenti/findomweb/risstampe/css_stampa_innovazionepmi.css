@@ -1,0 +1,412 @@
+/*
+#-------------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-------------------------------------------------------------------------------
+*/
+
+/*
+	Foglio di stile del Innovazione PMI
+*/
+@page { 
+size: A4;
+margin-left: 1.3cm;
+margin-right: 0.7cm;
+margin-top: 1cm;
+margin-bottom: 2.0cm;
+border:  none;
+padding: 0em;
+@top-left { content: element(header)};
+@bottom-center { content: element(footer) } 
+}
+
+#pagenumber:before {
+content: counter(page); 
+}
+
+#pagecount:before {
+content: counter(pages);  
+}
+
+@media all {
+	.page-break	{ display: none; }
+}
+
+@media print {
+	.page-break	{ display: block; page-break-before: always; }
+  tr {page-break-inside:avoid}
+}
+
+        div.header {
+  			display: block; 
+  			position: running(header);     
+  			margin-top:10px ;
+		}  
+        
+        div.footer {
+  			display: block; 
+  			position: running(footer);
+            text-align: right; 
+		} 
+
+        html {
+            background-color: white;
+        }
+        
+        hr{
+           border: thin solid black;
+        }
+        
+        body {
+            margin: 0px;
+	        padding: 0px;
+            background-color: white;
+            font-family: serif; font-size: 10pt;
+        }
+
+        img {
+            padding-top: 15px;   
+            border: none;
+        }
+        
+        table { border-collapse:collapse; border-spacing: 0; } 
+        
+        .fontSerif7Bold{
+           font-family: serif; 
+           font-size: 7pt;
+           font-weight: bold;
+        }
+        
+        .fontSerif9{
+           font-family: serif; 
+           font-size: 9pt;
+        }
+
+        .fontSerif10{
+           font-family: serif; 
+           font-size: 10pt;
+           font-weight: normal;
+        }
+        
+        .fontSerif10Bold{
+           font-family: serif; 
+           font-size: 10pt;
+           font-weight: bold;
+        }
+
+        .fontSerif11{
+           font-family: serif; 
+           font-size: 11pt;
+           font-weight: normal;
+        }
+		
+        .fontSerif12{
+           font-family: serif; 
+           font-size: 12pt;
+           font-weight: normal;
+        }
+        
+        .fontSerif12Bold{
+           font-family: serif; 
+           font-size: 12pt;
+           font-weight: bold;
+        }
+
+        .fontSerif14Bold{
+           font-family: serif; 
+           font-size: 14pt;
+           font-weight: bold;
+        }
+
+        .fontSerif18Bold{
+           font-family: serif; 
+           font-size: 18pt;
+           font-weight: bold;
+        }
+        
+        .fontItalicUnderline{
+           text-decoration: underline;
+           font-style: italic;
+        }
+
+        .fontNormal{
+		   font-style: normal;
+           font-weight: normal;
+        }			
+        
+        .fontItalic{
+           font-style: italic;
+        }
+        
+        .fontBold{
+		   font-style: normal;
+           font-weight: bold;
+        }		
+		
+        .fontUnderline{
+           text-decoration: underline;
+        }
+        
+        .riga1 {
+          border: thin solid black;
+          height: 110px;
+          float:left;
+          text-align: center;
+        }
+        
+        .cella1 {
+          border-right-width: 0px;
+          width: 270px;
+        }
+        
+        .cella2 {
+          border-right-width: 0px;
+          width: 249px;
+        }
+        
+        .cella4 {
+          width: 190px;
+        }		
+        
+        .riga2 {
+          border: thin solid black;
+          height: 100px;
+          float:left;
+          text-align: left;
+        }
+
+        .cella5 {
+          width: 324px;
+        }        
+
+        .cella6 {
+		  border-style:none;
+          width: 390px;
+        }   
+        
+        .rigalaboratorio {
+          border: thin solid black;
+          height: 20px;
+          float:left;
+          text-align: center;
+        }
+        
+        .cella1laboratorio {
+          border-right-width: 0px;
+          width: 70px;
+        }
+        
+        .cella2laboratorio {
+          width: 375px;
+        }
+        
+        .rigaIter {
+          float:left;
+        }
+        
+        .marcaBollo {
+          border: thin solid black;
+          height: 80px;
+          width: 80px;
+          float:right;
+          text-align: center;
+          margin-left:0px;
+          margin-top:0px;
+          padding-left:0px;
+          padding-top:10px;
+        }
+        
+        .oggetto{
+           padding-left:30px;
+           padding-top:10px;
+        }
+        
+        .paragrafo{
+           padding-top:15px;
+        }
+
+		.paragrafoIntL{
+           padding-top:15px;
+		   line-height: 1.5;
+        }
+        
+        .rientro30{
+          padding-left:30px;
+        }
+        
+        .spazio10{
+            padding-left:10px
+        }
+
+        .spazio20{
+            padding-left:20px
+        }
+
+        .spazio30{
+            padding-left:30px
+        }
+		
+        .spazio40{
+            padding-left:40px
+        }
+        
+        .spazio60{
+            padding-left:60px
+        }
+        
+        .spazio100{
+            padding-left:100px
+        }
+        
+        .spazio200{
+            padding-left:200px
+        }
+        
+        .spazio250{
+            padding-left:250px
+        }
+        
+        .centrato{
+            text-align: center;
+        }
+
+        .colonnaSingola{
+            border: thin solid black;
+            padding-bottom:5px;
+            padding-top:2px;
+        }	
+        
+        .colonnaSinistra{
+            border: thin solid black;
+            border-right-width : 0px;
+            padding-bottom:5px;
+            padding-top:2px;
+        }
+        
+        .colonnaCheck{
+            border: thin solid black;
+            width: 30px;  
+            text-align: center;
+            padding-bottom:10px;
+        }
+        
+        .colonnaCheckCapofila{
+            border: thin solid black;
+            width: 70px;  
+            padding-bottom:10px;
+        }
+
+        .check{
+            border: thin solid black;
+            width: 10px;
+            height: 10px;
+            float: left;
+            margin-top:4px;
+            margin-left:10px;
+        }
+
+        .checkMin{
+            border: thin solid black;
+            width: 8px;
+            height: 8px;
+            float: left;
+            margin-top:4px;
+            margin-left:10px;
+        }
+            
+        .checkX{
+            border: none;
+            width: 10px;
+            height: 10px;
+            float: left;
+            margin-left:-9px;
+        }
+
+        .checkXMin{
+            border: none;
+            width: 8px;
+            height: 8px;
+            float: left;
+            margin-left:-9px;
+        }
+        
+        .checkCapofila{
+            border: thin solid black;
+            width: 8px;
+            height: 8px;
+            float: left;
+            margin-top:4px;
+            margin-left:30px;
+        }
+        
+        .checkXCapofila{
+            border: none;
+            width: 8px;
+            height: 8px;
+            float: left;
+            margin-left:-8px;
+        }
+        
+        .checkTipoSede{
+            border: thin solid black;
+            width: 10px;
+            height: 10px;
+            float: left;
+            margin-top:0px;
+            margin-left:10px;
+        }
+        
+        .checkXTipoSede{
+            border: none;
+            width: 10px;
+            height: 10px;
+            float: left;
+            margin-top:-4px;
+            margin-left:-8px;
+        }
+        
+        .separatore{
+            border: thin solid black;
+            border-right-width: 0px;
+            border-left-width: 0px;
+            border-bottom-width: 0px;
+            width: 718px;
+        }
+        
+        .riquadro{
+            border: thin solid black;
+            width: 700px;
+            padding: 8px;
+        }
+        
+        .width30{
+            width: 30px;
+        }
+        
+        .width50{
+            width: 50px;
+        }
+        
+        .width60{
+            width: 60px;
+        }
+        
+        .width70{
+            width: 70px;
+        }
+        
+        .width130{
+            width: 130px;
+        }
+        
+        .width200{
+            width: 200px;
+        }
+        
+        .width450{
+            width: 450px;
+        }
+        
+        .width660{
+            width: 660px;
+        }

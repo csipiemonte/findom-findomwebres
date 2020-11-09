@@ -1,0 +1,107 @@
+/*
+#-----------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-----------------------------------------------------------------------------
+*/
+
+/*SOVRASCRITTURA STRUTTURA.CSS BASE*/
+/*banner di portale*/
+div#portalHeader {background:url("/ris/css/generaliV4/im/scritta_sisp_sfondo.jpg") repeat-x scroll 0 100% #fff;margin-bottom:0px;border-bottom:1px solid #AEAEAE;margin-bottom:0!important;}
+div#portalHeader_title {background:url("/ris/css/generaliV4/im/scritta_sisp.gif") no-repeat scroll /*250px*/67px 50% transparent;}
+div#portalHeader, div#portalHeader_title, 
+div#portalHeader_title h1 a {min-height:30px;height:auto!important;height:30px;}
+
+/*div#portalFooter {background: #1E354D url("http://www.sistemapiemonte.it/cms/templates/sp/images/logocsi.png") 80px 20px no-repeat;
+padding: 20px 0 20px 15px;width:auto;}
+div#portalFooter p.alt {display:block;padding: 30px 0 10px 150px;text-align: center;font-size:1.1em}*/
+div#portalFooter {background-image:none;background-color:#1E354D;padding:0}
+div#portalFooter p.alt {display:block;background-image:none;background-color:transparent;color:#fff;width:auto;text-align:center;height:auto!important;height:70px;padding:20px 80px;overflow:hidden;margin-bottom:0}
+div#portalFooter .csi a.apriesterno, div#portalFooter .csi a.apriesterno:active, div#portalFooter .csi a.apriesterno:link {
+width:140px;height:60px;min-height:60px;float:left;
+background: url("im/logocsi.png") no-repeat scroll 0 0 transparent;}
+div#portalFooter .csi span.logoCsi {display:none}
+div#portalFooter .regione {display:block;vertical-align:middle;padding-top:20px;font-size:1.1em}
+
+/*pagine di presentazione e filo portale*/
+#presentation div#portalHeader, 
+#presentation div#portalHeader_title, 
+#presentation div#portalHeader_title h1 a {min-height:50px;height:auto!important;height:50px;}
+#presentation #contPath {background-color:#fff;padding:3px 6px;font-size:0.9em}
+#presentation #contPath .connessionePath {position: absolute;top: -500000px;}
+#presentation #contPath a {background: url("/ris/resources/global/css/jquery/im/superfish/ico_menu_2liv_parent.gif") no-repeat scroll 100% 50% transparent;padding-right:10px;padding-left:3px}
+
+/*banner di servizio*/
+div#applicationHeader {
+background: #1a4b74; /* Old browsers */
+background: -moz-linear-gradient(top,  #327cb9 0%, #1a4b74 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#327cb9), color-stop(100%,#1a4b74)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #327cb9 0%,#1a4b74 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #327cb9 0%,#1a4b74 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #327cb9 0%,#1a4b74 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #327cb9 0%,#1a4b74 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#327cb9', endColorstr='#1a4b74',GradientType=0 ); /* IE6-8 */
+/*background:url("im/sf_banner_sp_small.jpg") repeat-x scroll 0 0 #D1D4D9;*/
+min-height:40px;height:auto!important;height:40px; /*border-top:solid 2px #fff;*/}
+#presentation div#applicationHeader h2 {height: auto !important;margin: 0;height: 75px;min-height: 75px;padding: 15px 0 0 /*34px*/6px;width: 80%;}
+div#applicationHeader h2 {/*background: url("im/sf_banner_sp.jpg") repeat-x scroll 0 70% transparent;*/
+border: 0 none;display: block;font-size: 2.4em;height: auto !important;margin: 0;padding:10px;}/*width: 80%;padding: 0px 0 0 6px;height: 40px;min-height: 40px;*/
+#presentation div#applicationHeader {min-height:90px;height:auto!important;height:90px; border-top:0;}
+
+div#applicationHeader h2 span, div#applicationHeader h2 a {font-size:2.4em;border: 0 none;color: #fff;display: block;height: auto;text-decoration: none;}
+
+div#applicationArea {position:relative}
+div.userInfoPanel {position:absolute;background:none transparent;right:0;}
+
+/*titoli*/
+h3 {padding-left:5px;padding-right:5px;color:#fff;}
+h4 {color:#000;padding-left:0;padding-right:0;}
+h3 {background-color: #0B416C}
+h4 {background-color: #ffffff;}
+h3 a:link, h3 a:active, h3 a:visited, h3 a:hover {color:#fff;}
+h4 a:link, h4 a:active, h4 a:visited, h4 a:hover {color:#0153A9;text-decoration:none;}
+
+/*homepage di servizio*/
+.sottoMenuHome h4 a:link, .sottoMenuHome h4 a:active, .sottoMenuHome h4 a:visited {background-color:#E7ECF0}
+.menuHome h3 a:link, .menuHome h3 a:hover, .menuHome h3 a:active, .menuHome h3 a:visited, 
+.sottoMenuHome h4 a:hover{background-color:#fff}
+.menuHome h3, .menuHome h4 {background: linear-gradient(to bottom, #fff 0%, #fff 100%) repeat scroll 0 0 transparent;padding:0}
+
+
+/*messaggistica*/
+div.stdMessagePanel div.feedInfo, div.stdMessagePanel div.feedKo, div.stdMessagePanel div.feedLoad, div.stdMessagePanel div.feedCorrect, div.stdMessagePanel div.feedWarning {background-color:#fff;font-weight: bold;}
+div.stdMessagePanel div.feedInfo {color: #065C00; border: 2px solid #1A4B74;}
+div.stdMessagePanel div.feedLoad {background-image: url("/ris/resources/global/css/im/ico_load_big.gif");
+border: 2px solid #1A4B74;}
+
+/*pulsanti*/
+.commandPanel span.highlighted input, .commandPanel span.highlighted a, .commandPanel span.highlighted a:link, .commandPanel span.highlighted a:hover, .commandPanel span.highlighted a:active, .commandPanel span.highlighted a:visited {color:#fff}
+
+div.commandPanel span.highlighted {
+background-image: none;
+background-color: #0153A9;
+background-image:  -webkit-gradient(linear, left top, left bottom, from(#0153A9), to(#0B416C)); 
+background-image:  -webkit-linear-gradient(top, #0153A9, #0B416C); 
+background-image:  -moz-linear-gradient(top, #0153A9, #0B416C);/* scuro 0B416C   chiaro 0153A9*/
+background-image:  -ms-linear-gradient(top, #0153A9, #0B416C); 
+background-image:  -o-linear-gradient(top, #0153A9, #0B416C); 
+background-image:  linear-gradient(top, #0153A9, #0B416C);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #0153A9),color-stop(0.84, #0B416C));
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0153A9', EndColorStr='#0B416C');
+
+}
+div.commandPanel span.highlighted:hover {
+background-image: none;
+background-color: #0B416C; 
+background-image:  -webkit-gradient(linear, left top, left bottom, from(#0B416C), to(#0B416C)); 
+background-image:  -webkit-linear-gradient(top, #0B416C, #0B416C); 
+background-image:  -moz-linear-gradient(top, #0B416C, #0B416C);
+background-image:  -ms-linear-gradient(top, #0B416C, #0B416C); 
+background-image:  -o-linear-gradient(top, #0B416C, #0B416C); 
+background-image:  linear-gradient(top, #0B416C, #0B416C);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #0B416C),color-stop(0.84, #0B416C));
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0B416C', EndColorStr='#0B416C');
+}
+div.commandPanel span.highlighted:hover, div.commandPanel span.highlighted input:hover, div.commandPanel span.highlighted a:hover {color: #fff !important;}
+span.go input, span.go a, span.go a:link, span.go a:hover, span.go a:active, span.go a:visited,
+span.back input, span.back a, span.back a:link, span.back a:hover, span.back a:active, span.back a:visited {background-image:none;padding-left:0;padding-right:0;}

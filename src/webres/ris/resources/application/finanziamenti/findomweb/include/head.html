@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- 
+#-------------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-------------------------------------------------------------------------------
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it">
+	<head>
+        <!--<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Sistema piemonte - Gestione delle domande di finanziamento</title>
+
+		<!-- ////////// CSS -->
+		<link href="/ris/resources/application/finanziamenti/findomweb/css/indice.css" rel="stylesheet" type="text/css" media="screen" />
+
+        <link href="/ris/resources/global_share/css/print.css" rel="stylesheet" type="text/css" media="print" />
+
+		<!-- CSS caricati via JS tramite il media="javascript-screen"-->
+
+        <!-- caricamento css per JQUERY UI - calendario, dialog, slider, tabs, accordion, List builder drag and drop-->
+        <link href="/ris/resources/global_share/css/jquery/ui-1.8.24/jquery-ui-1.8.24.custom.css" rel="stylesheet" type="text/css" media="javascript-screen" />
+        <link href="/ris/resources/global_share/css/jquery/ui-1.8.24/jquery-ui-skin.css" rel="stylesheet" type="text/css" media="javascript-screen" />
+        <!-- caricamento stili per jqstyles.js -->
+        <link href="/ris/resources/global_share/css/jquery/overouttr.css" rel="stylesheet" type="text/css" media="javascript-screen" />
+        <!-- caricamento css per JQUERY  ordinamento colonne -->
+        <link href="/ris/resources/global_share/css/jquery/tablesorter2.0.css" rel="stylesheet" type="text/css" media="javascript-screen" />
+        <!-- caricamento css per JQUERY  ytoggle.js (visualizza/nascondi) -->
+        <link href="/ris/resources/global_share/css/jquery/ytoggle.css" rel="stylesheet" type="text/css" media="javascript-screen" />
+        <!-- caricamento css per JQUERY  aprihelp e apricontatti a mo di "modale" -->
+        <link href="/ris/resources/global_share/css/jquery/popup.css" rel="stylesheet" type="text/css" media="javascript-screen" />
+        <!-- caricamento css per JQUERY UI - dialog per la stampa del solo contenuto della dialog-->
+		<link href="/ris/resources/global_share/css/jquery/ui_dialog_print.css" id="dialog-print" rel="stylesheet" type="text/css" media="javascript-print" />
+		<!-- NUOVA caricamento css x jqtooltip.js (tooltip informativo) -->
+        <link href="/ris/resources/global_share/css/jquery/jqtooltip.css" rel="stylesheet" type="text/css" media="javascript-screen" />
+        <!-- caricamento css per JQUERY input focus style e testo -->
+		<link href="/ris/resources/global_share/css/jquery/inputfocus.css" rel="stylesheet" type="text/css" media="javascript-screen" />
+        <!-- caricamento css per JQUERY INLINE VALIDATION-->
+        <link href="/ris/resources/global_share/css/jquery/inlinevalidation_error.css" rel="stylesheet" type="text/css" media="javascript-screen" />
+
+        <!-- caricamento css per JQUERY per MENU -->
+        <link href="/ris/resources/global_share/css/jquery/superfish.css" rel="stylesheet" type="text/css" media="javascript-screen" />
+        <link href="/ris/resources/global_share/css/jquery/superfish-dropdown.css" rel="stylesheet" type="text/css" media="javascript-screen" />
+        <link href="/ris/resources/global_share/css/jquery/superfish-navbar.css" rel="stylesheet" type="text/css" media="javascript-screen" />        
+
+		<!--SOVRASCRITTURE SP-->
+		<link href="/ris/resources/application/finanziamenti/findomweb/css/jquery/z_jquery_all_SP.css" rel="stylesheet" type="text/css" media="javascript-screen" />
+
+        <!-- ////////// FINE CSS -->
+
+        <!-- //////////  INIZIO NUOVA LIBRERIA jquery 1.8.2-->
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/jquery/jquery-1.8.2.js"></script>
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/metadata/metadata.js"></script>
+        <!-- //////////  FINE NUOVA LIBRERIA jquery 1.8.2-->
+
+        <!-- ////////// INIZIO PLUGING-->
+
+		<!-- jquery per caricare i css solo via js-->
+		<script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/loadcss/loadcss-2.0.js"></script>
+		<!-- jquery per l'hover sui pulsanti per ie6 -->
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/overouthandler/overouthandler.pack.js"></script>
+        <!-- jquery per l'evidenziazione delle TD/TH di TABLE (x ora c'é solo questo poi sarà integrato da altre funzioni) -->
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/overouttr/jqstyles.js"></script>
+        <!-- jquery per l'apertura delle finestra tramite un class -->
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/jqapri/jqapri.js"></script>
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/jqapri/jqapri.init.rupar.js"></script>
+		 <!-- jquery per il caricamento dei pulsati chiudi e stampa nelle dialog -->
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/jqbutton/jqbutton.js"></script>
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/jqbutton/jqbutton.init.js"></script>
+        <!--JQUERY UI - calendario, dialog, slider, tabs, accordion, resize, List builder drag and drop-->
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/ui-component/jquery-ui-1.9.0.custom.js"></script>
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/ui-dialogahah/ui-dialogahah.js"></script>
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/ui-calendario/ui-calendario.js"></script>
+		<!--ordinamento colonne-->
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/tablesorter/jquery.tablesorter2.0.js"></script>
+        <!--tooltip-->
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/jqtooltip/jqtooltip.js"></script>
+        <!--checkbox selection-->
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/checkbox/checkbox.js"></script>
+        <!--visualizza/nascondi in uno SPAN con testo-->
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/ytoggle/ytoggle.js"></script>
+        <!--dettagli require campi inserimento-->
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/inputfocus/inputfocus.js"></script>
+        <!-- glossario -->
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/jqglossary/jqglossary.js"></script>
+
+        <!-- ////////// INLINE VALIDATION -->
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/jqvalidate/jquery.validate.csi.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/jqvalidate/localization/messages_it.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/jqvalidate/jqvalidate.js" charset="utf-8"></script>
+
+         <!-- ////////// MENU -->
+		<script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/jqmenu/sf/superfish.click.csi.js"></script>
+		<script type="text/javascript" src="/ris/resources/global_share/js/jqlib/plugins/jqmenu/jqmenu.js"></script>
+        <!-- //////////  FINE PLUGING-->
+
+        <script type="text/javascript"><!--
+
+        jQuery(document).ready(function() {
+        	initReady();
+        }); // fine JQuery.document.ready.function
+
+        function initReady() {
+		
+		$('#id_anom_blocc').click(function() {
+			var $this = $(this);
+			if ($this.is(':checked')) {
+				$(".ruleHideShow").addClass("show-hide");
+			} else {
+				$(".ruleHideShow").removeClass("show-hide");
+			}
+		});
+		
+		jQuery(".menuDropdown").insertAfter("#northPanel");
+		jQuery(".menuOrizzontal").insertAfter("#northPanel");	 
+		 	
+		jQuery(".msgBoxPos").prepend(jQuery(".feedback"));
+
+	    // PER ORDINAMENTO COLONNE x pagina home anagrafica-ats
+           jQuery("#dettaglio_sedi").tablesorter({
+               sortColumn: 'Codice', // Intero o nome della colonna da ordinare all'avvio
+               sortClassAsc: 'ord_su',     // Classe CSS per la colonna ordinata in modo crescente
+               sortClassDesc: 'ord_giu',   // Classe CSS per la colonna ordinata in modo decrescente
+               headerClass: 'no_ordine',   // class name for headers (th's)
+               headers: {
+                   0: {sorter: false},
+                   1: {sorter: false},
+                   4: {sorter: false},
+				5: {sorter: false}
+
+               }
+           });
+			
+		    // PER ORDINAMENTO COLONNE x pagina home anagrafica-ats
+            jQuery("#verifica_anomalie").tablesorter({
+                sortColumn: 'Codice', // Intero o nome della colonna da ordinare all'avvio
+                sortClassAsc: 'ord_su',     // Classe CSS per la colonna ordinata in modo crescente
+                sortClassDesc: 'ord_giu',   // Classe CSS per la colonna ordinata in modo decrescente
+                headerClass: 'no_ordine',   // class name for headers (th's)
+                headers: {
+                    1: {sorter: false}
+                }
+            });
+
+            //DIALOG X PAGINE MESSAGGISTICA
+            jQuery('a.dialog-elimina, input.dialog-elimina, input.dialog-feedback').dialogahah({
+                width: 600,
+                modal: true,
+                bgiframe: false,
+                resizable: false,
+                draggable: false,
+                chiudi   :false,
+				load: function(dialog_target) {
+				jQuery("span.close_js",dialog_target).jbutton({
+				text : 'no, chiudi',
+				callback : function (el){
+					$(el).parents(".ui-dialog-content:eq(0)").dialog("close");
+				}
+				});
+				}
+            });
+
+            jQuery('a.dialog-print').dialogahah({
+                width: 600,
+                modal: true,
+                bgiframe: false,
+                resizable: false,
+                draggable: false,
+                chiudi   :true,
+				load: function(dialog_target) {
+				jQuery("span.close_js",dialog_target).jbutton({
+				text : 'no, chiudi',
+				callback : function (el){
+					$(el).parents(".ui-dialog-content:eq(0)").dialog("close");
+				}
+				});
+				}
+            });
+
+            //DIALOG X PAGINE MESSAGGISTICA
+            jQuery('input.dialog-feedback-save').dialogahah({
+                width: 600,
+                modal: true,
+                bgiframe: false,
+                resizable: false,
+                draggable: false,
+                chiudi   :false,
+				load: function(dialog_target) {
+				jQuery("span.close_js",dialog_target).jbutton({
+				text : 'chiudi',
+				callback : function (el){
+					$(el).parents(".ui-dialog-content:eq(0)").dialog("close");
+				}
+				});
+				}
+            });
+
+            //DIALOG X PAGINE MESSAGGISTICA
+            jQuery('a.dialog-dettaglio-lab').dialogahah({
+                width: 650,
+                modal: true,
+                bgiframe: false,
+                resizable: false,
+                draggable: false,
+                chiudi   :false,
+	            load: function(dialog_target) {
+					jQuery(dialog_target).tooltip_init();
+					jQuery(dialog_target).jbutton_init();
+	            }
+            });
+
+            //DIALOG X PAGINA HELP
+            jQuery('a.dialog-help').dialogahah({
+                width: 400,
+                modal: false,
+                bgiframe: true,
+                resizable: true,
+                draggable: true,
+                chiudi   :true,
+			  load: function(dialog_target) {
+                    // init apri
+                    jQuery(dialog_target).apri_init();
+                }
+            });
+
+            //DIALOG X PAGINA CONTATTI
+            jQuery('a.dialog-contatti').dialogahah({
+                width: 400,
+                modal: false,
+                bgiframe: true,
+                resizable: true,
+                draggable: true,
+                chiudi   :true,
+                load: function(dialog_target) {
+                    // init buttons rupar modale
+                    jQuery(dialog_target).jbutton_init();
+                }
+            });
+
+			//GLOSSARIO
+	        jQuery("#target_filtro_lettera").filtro_lettere();
+
+	        //DIALOG X PAGINA GLOSSARIO
+	        jQuery('a.dialog-glossary').dialogahah({
+	            width: 650,
+	            modal: false,
+	            bgiframe: false,
+	            resizable: false,
+	            draggable: true,
+	            load: function(dialog_target) {
+					jQuery("#target_filtro_lettera", dialog_target).filtro_lettere();
+	            	// link apri
+	            	jQuery(dialog_target).apri_init();
+	            }
+	        });
+
+	        // Inline Validation
+	        jQuery('#form-to-validate').jqvalidate();
+
+			// initialise menu dropdown
+			jQuery('.menuDropdown ul.sf-menu').menuDropDown();
+			jQuery('.menuOrizzontal ul.sf-menu').menuHor();	
+
+			//IMPOSTAZIONE CALENDARIO SINGOLO CON SELECT X ANNO
+			jQuery(".calendarioCustom2").calendario({     
+				yearRange: '1850:2050',
+				changeMonth: true,
+				changeYear: true
+			});
+
+        }
+        // fine initReady function
+		
+	--></script>
+	<!-- FINE /ris/resources/application/nome_servizio/include/head.html -->

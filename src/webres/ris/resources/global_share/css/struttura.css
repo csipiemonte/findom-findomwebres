@@ -1,0 +1,275 @@
+/*
+#-----------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-----------------------------------------------------------------------------
+*/
+
+/*STILI GENERALI*/
+html {margin:auto;padding:auto;}
+body {background-image:none;background-color:#CCD1D7;color:#000;
+font:75% Arial, Helvetica, sans-serif;margin: 0px;padding:0px;word-wrap:break-word;}
+a:link, a:visited, a:hover, a:active {font-weight:bold;text-decoration:underline;margin:0;padding:0;color:#25559D;}
+a:hover {text-decoration:none;}
+/*a:focus{outline:0;}*/
+.nascosto, hr {position:absolute;left:-10000px;top:-10000px;width:0;height:0;overflow:hidden;clear:none;}
+#centerPanel h1.nascosto, #centerPanel h2.nascosto, #centerPanel h3.nascosto, #centerPanel h4.nascosto, #centerPanel h5.nascosto, #centerPanel p.nascosto, #centerPanel ul.nascosto, #centerPanel li.nascosto, #centerPanel dl.nascosto, #centerPanel a.nascosto {position:absolute!important;}
+form {margin:0;padding:0;}
+h1, h2, h3, h4, h5, p, ul, li, dl, a {margin:0;padding:0;}
+ul, ol {padding:0 0 8px 14px;}
+li, dl, dd {margin:0 0 3px 0;}
+dl {padding:0; margin-bottom:8px;}
+dd {padding:0; margin-bottom:3px;}
+acronym {border-bottom:1px dashed black;cursor:help;}
+h2 {font-size:1.8em;}
+h3 {font-size:1.5em;margin-bottom:8px}
+h4 {font-size:1.2em;margin-bottom:8px}
+h5 {font-size:1em;margin-bottom:8px;color:#444E56;border-bottom:1px solid #444E56;}
+h2, h3 {font-weight:lighter;}
+h4, h5 {font-weight:bold;}
+table {font-size:1em;}
+input {margin:0;padding:0;}
+input, select, textarea {font-family: Arial, Helvetica, sans-serif;font-size:1.0em;
+border:1px solid #C0C0C0;}
+p {margin-bottom:8px;}
+
+#page {min-width:990px;}
+
+/*LINK ESTERNO*/
+div#portalFooter a.apriesterno, div#portalFooter a:active.apriesterno, div#portalFooter a:link.apriesterno {background-image:none;}
+a.apriesterno, a:active.apriesterno, a:link.apriesterno, a:hover.apriesterno, a:visited.apriesterno,
+div#portalFooter a.apriesterno:hover {background:transparent url(/ris/resources/global_share/css/im/ico_link_esterno.gif) 100% 50% no-repeat;padding-right:14px;}
+
+/* inizio portalHeader.HTML */
+.alert_js p {position:inherit;clear:none;margin:0;top:inherit;left:inherit;text-align:center;width:auto!important;border:2px dotted #BF8F00;padding:4px;}
+div#portalHeader,
+div#portalHeader_title, #portalHeader_title h1 a {min-height:30px;height:auto!important;height:30px;}
+div#portalHeader {background:#fff url(/ris/resources/global_share/css/im/banner_corto.jpg) 0 100% no-repeat;padding:0;}
+div#portalHeader_title {width:100%;float:none;background:transparent url(/ris/resources/global_share/css/im/banner_titolo.png) no-repeat scroll 100% 0;background-position:150px 0%;}
+#portalHeader_title h1 a:hover, #portalHeader_title h1 a:active {background-position:227px 0!important;}
+
+
+body{ background:#fff;}
+
+/*titolo sistemapiemonte*/
+#portalHeader {color: #FFFFFF; display: block; margin: 0;  min-height: 50px;overflow: hidden;padding: 0;position: relative;width: 100%;}
+#portalHeader h1{color: #0153A9;display: block;font-size: 28px;font-weight: bold;left:0; margin: 0; padding: 0; position: static;top: 0;width: 100%; z-index:1;}
+#portalHeader .header {background: none repeat scroll 0 0 #d3d3d3;color: #0153A9;overflow: hidden;padding: 2px 20px 2px 80px;width:100%;}
+
+/*due tab privati e pa*/
+.menupaprivati, .menupaprivati ul, .menupaprivati ul.pull-right{ padding:0; margin:0; clear:none;}
+.menupaprivati ul.pull-right{ margin-right:10px;}
+.menupaprivati ul.pull-right li{ display:inline; margin-right:3px;}
+.menupaprivati ul.pull-right li a{ color:#fff; font-weight:bold; font-size:14px; text-transform:uppercase; display:inline-block; height:20px; background:#bf5229; padding: 10px 10px 8px; margin-top:12px; text-decoration:none;}
+.menupaprivati ul.pull-right li a:hover { text-decoration: underline;}
+.menupaprivati ul.pull-right li.active a{background:#d3d3d3; color: #0153A9;}
+
+/*cos'è sistemapiemonte + cerca*/
+.menuTopSx{ margin-bottom:0; padding-left:80px!important;}
+.menuTopSx li{ display:inline;}
+.menuTopSx li a{ display:inline-block; margin-top:27px; padding:0px; color:#000;padding-left:6px; font-weight: normal; font-size: 1em; text-decoration:none;}
+.menuTopSx li a.pipe_dx{ border-right:1px solid #000; padding-right:6px;}
+.pull-right {float: right;}
+.pull-left {float: left;}
+
+div#portalHeader { background:none; border:none; margin-bottom:10px;}
+h3{ background:#0B416C;}
+div#applicationHeader h2 {background:none repeat scroll 0 0 #0153A9;}
+
+/* fine portalHeader.HTML */
+
+/* inizio applicationHeader.HTML */
+div#applicationHeader{background:#F1F1F1;color:#fff;/*border-bottom:1px solid #5C6D81; verificare con sotto filo arianna*/}
+div#applicationHeader.with_image{padding-left:170px;background-position:0 50%;background-repeat:no-repeat;}
+div#applicationHeader h2{background:#0153A9;padding:3px 10px 0 8px;margin-bottom:0;font-size:3em;font-weight:bold;}
+div#applicationHeader h2:first-letter{font-size:1.01em!important;}
+div#applicationHeader h2.with_subtitle{font-size:3em; letter-spacing:1px;}
+/* fine applicationHeader.HTML */
+
+/*********  NORTH PANEL  *********/
+
+/*login*/
+div.userInfoPanel {background:#48515A url(/ris/resources/global_share/css/im/sfondo_utente.gif) 1px 0 repeat-x;color:#fff;font-weight:bold;
+height:auto!important;height:1.3em;padding:3px 10px;overflow:hidden}/*min-height:1.25em;*/
+div.userData {float:left}
+div.userInfoActions {float:right}
+div.userInfoActions a, div.userInfoActions a:link, div.userInfoActions a:active, div.userInfoActions a:hover,div.userInfoActions a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_esci.gif) 100% 65% no-repeat;color:#fff;padding-right:8px;text-decoration:none;}
+div.userInfoActions a:hover {color:#D4D5DA}
+div.userData span {margin-right:8px;}
+div.userData span.value {font-weight:normal;margin-right:0;}
+
+/* bricciole pane + menu orizzontale*/
+#contextPanel {background:#fff;border-top:1px solid #B3B2C0;border-bottom:1px solid #B3B2C0;padding:2px 10px;overflow:hidden;width:auto;height:auto!important;height:1.4em;}/*height:1.3em; problemi con menu orizzontale FF!!!*/
+#contextPanel #breadCrumbPanel {float:left;border:1px solid #fff; font-size:0.9em;}
+#contextPanel #breadCrumbPanel a, #contextPanel #breadCrumbPanel a:active, #contextPanel #breadCrumbPanel a:link, #contextPanel #breadCrumbPanel a:hover,#contextPanel #breadCrumbPanel a:visited {margin:0;padding:0;font-weight:normal;text-decoration:none;border:0;}
+#contextPanel #breadCrumbPanel span.element {margin-right:4px;padding:0 8px 0 0;text-decoration:none;background:#fff url(/ris/resources/global_share/css/im/sfondo_link_bricciole.gif) 100% 50% no-repeat;border:0;}
+#contextPanel #breadCrumbPanel span.currentElement {background:none;padding:0;}
+#contextPanel #breadCrumbPanel span.separator {display:none;}
+#contextPanel #contextMenu {float:right;border:1px solid #fff;}
+#contextPanel #contextMenu a {padding:0px;border-left:1px dotted #000;margin-left:4px;text-decoration:none;}
+#contextPanel #contextMenu a.aprihelp, #contextPanel #contextMenu a.aprihelp:link, #contextPanel #contextMenu a.aprihelp:active, #contextPanel #contextMenu a.aprihelp:visited, #contextPanel #contextMenu a.aprihelp:hover,
+#contextPanel #contextMenu a.dialog-help, #contextPanel #contextMenu a.dialog-help:link, #contextPanel #contextMenu a.dialog-help:active, #contextPanel #contextMenu a.dialog-help:visited, #contextPanel #contextMenu a.dialog-help:hover {background:url(/ris/resources/global_share/css/im/ico_help.gif) 5px 50% no-repeat;padding-left:24px;}
+#contextPanel #contextMenu a.apricontatti,
+#contextPanel #contextMenu a.dialog-contatti {background:url(/ris/resources/global_share/css/im/ico_contatti.gif) 5px 50% no-repeat;padding-left:24px;}
+#contextPanel #contextMenu a.dialog-faq {background:url(/ris/resources/global_share/css/im/ico_faq.gif) 5px 50% no-repeat;padding-left:28px;}
+#contextPanel #contextMenu a, #contextPanel #contextMenu a:link, #contextPanel #contextMenu a:active, #contextPanel #contextMenu a:visited, #contextPanel #contextMenu a:hover {padding-top:2px;padding-bottom:2px}
+#breadCrumbPanel, #contextMenu{padding-top:0!important;padding-bottom:0!important;padding-top:1px;padding-bottom:1px}
+
+/* inizio portalFooter.HTML */
+#contentPanel {overflow:hidden;width:100%;}
+div#portalFooter div.clearer {clear:both}
+div#portalFooter {background:#1E354D;color:#fff;font-size:0.95em;min-height:0;
+height:auto!important;height:0;padding:20px 0 20px 0;width:100%;overflow:hidden!important;overflow:visible;clear:both;}
+div#portalFooter a {font-weight:normal;color:#fff;}
+div#portalFooter div.riferimentiPortale strong, 
+div#portalFooter div.riferimentiPortale span {display:block;}
+div#portalFooter div.riferimentiPortale strong a {font-weight:bold;}
+div#portalFooter div.riferimentiPortale, div.numeroVerde {float:left;width:30%;padding-left:0px;}
+div#portalFooter div.boxDX {float:right;width:20%;}
+div.numeroVerde {width:39%;}
+div.numeroVerde strong {width:100%;display:block;text-align:center;}
+div#portalFooter div.riferimentiPortale div.contatti {padding-left:10px;background:none;}
+div#portalFooter div.numeroVerde {background:transparent url(/ris/resources/global_share/css/im/ico_numeroverde.gif) 50% 100% no-repeat;min-height:55px;height:auto!important;height:55px;}
+div#portalFooter p, div#portalFooter a {position:static!important;}
+div#portalFooter a.apriesterno:hover {white-space:normal;}
+
+div#portalFooter  div.boxSX {
+    float: left;
+    margin-bottom: 16px;
+    margin-right: 10px;
+    padding-left: 20px;
+    width: 14%;
+}
+div#portalFooter  div.boxCentro {
+    width:40%;
+	padding-top:30px;
+	float:right;
+}
+div#portalFooter .alt {display:none}
+
+
+
+
+/* fine portalFooter.HTML */
+
+/*********  CENTER PANEL  *********/
+
+#centerPanel{background:#CCD1D7;padding: 3px 20px 10px;border:1px solid #CCD1D7}
+input.noborder {border:0}
+ 
+/*impostazioni messaggi*/
+div.stdMessagePanel {margin-bottom:8px;text-align:left}
+div.stdMessagePanel ul {margin:0 0 0 20px;text-align:left;margin-top:8px;font-weight:normal}
+div.stdMessagePanel p {margin-bottom:3px;}
+div.stdMessagePanel div.feedInfo, div.stdMessagePanel div.feedKo, div.stdMessagePanel div.feedLoad,
+div.stdMessagePanel div.feedCorrect, div.stdMessagePanel div.feedWarning {padding:28px 22px 28px 105px;
+background-repeat:no-repeat;background-position:22px 18px;background-color:#fff;background-attachment:scroll;
+margin:0 0 8px 0;}
+div.stdMessagePanel div.feedInfo {border:2px solid #98A0AB;background-image:url(/ris/resources/global_share/css/im/ico_info_big.gif);}
+div.stdMessagePanel div.feedWarning {border:2px solid #FEA500;background-image:url(/ris/resources/global_share/css/im/ico_alert_big.gif);}
+div.stdMessagePanel div.feedKo {border:2px solid #FF1E00;background-image:url(/ris/resources/global_share/css/im/ico_error_big.gif);}
+div.stdMessagePanel div.feedCorrect {border:2px solid #61B508;background-image:url(/ris/resources/global_share/css/im/ico_ok_big.gif);}
+div.stdMessagePanel div.feedLoad  {border:2px solid #98A0AB;background-image:url(/ris/resources/global_share/css/im/ico_load_big.gif);}
+
+/*pulsanti nascosti x js e formattati*/
+#dialog_target span.close_js, #dialog_target span.print_js {display:none}
+#dialog_target.ui-dialog-content span.print_js, 
+#dialog_target.ui-dialog-content span.close_js {display:block}
+span.print_js a:link,
+span.print_js a:hover,
+span.print_js a:visited,
+span.print_js a:active {background:transparent url(/ris/resources/global_share/css/jquery/im/ico_print.gif) no-repeat scroll 0 50%!important;
+padding-left:20px;}
+
+/* inizio COMMAND PANEL */
+.commandPanel {overflow:hidden;width:100%;padding-bottom:8px;}
+.commandPanel .left, .commandPanel .right {min-height:1.5em;height:auto!important;height:1.5em;}
+.commandPanel .left {float:left;}
+.commandPanel .right {float:right;}
+.commandPanel .left span,.commandPanel .right span  {padding:1px 5px;}
+.commandPanel .left span {float:left;margin-right:8px;}
+.commandPanel .right span {float:left;margin-left:8px;}
+.commandPanel input, table span.pulsante input {cursor:pointer}
+.commandPanel input, .commandPanel a,
+.commandPanel a:link, .commandPanel a:hover,
+.commandPanel a:active, .commandPanel a:visited {font-weight:normal;color:#373C40;text-align:center;text-decoration:none;background:#EBEFF0 url(/ris/resources/global_share/css/im/sfondo_pulsante.gif) 50% 100% repeat-x;border:0;}
+.commandPanel span {border-top:1px solid #a7b0b7;border-left:1px solid #838d99;border-right:1px solid #333d46;border-bottom:1px solid #000;background:#EBEFF0 url(/ris/resources/global_share/css/im/sfondo_pulsante.gif) 50% 100% repeat-x;}
+.commandPanel span input, .commandPanel span a,
+.commandPanel span a:link, .commandPanel span a:hover,
+.commandPanel span a:active, .commandPanel span a:visited {background:none;margin-right:0;}
+.commandPanel span input {padding-bottom:2px!important;padding-top:2px!important;padding-bottom:1px;padding-top:1px;}
+.commandPanel span a,
+.commandPanel span a:link, .commandPanel span a:hover,
+.commandPanel span a:active, .commandPanel span a:visited {display:block;padding-bottom:2px;padding-top:2px;}
+@-moz-document url-prefix() { 
+  .commandPanel span input {padding-bottom:1px!important;padding-top:1px!important;} /*only FF*/
+}.finto{}
+
+.commandPanel a:hover, .commandPanel input:hover, 
+.commandPanel input.Hover, table div.commandTable input:hover, 
+table div.commandTable input.Hover {color:#5F6C7C;}
+.commandPanel span a.downloadXls,
+.commandPanel span a.downloadXls:link, .commandPanel span a.downloadXls:hover,
+.commandPanel span a.downloadXls:active, .commandPanel span a.downloadXls:visited {background-image:url(/ris/resources/global_share/css/im/ico_xls.gif);background-repeat:no-repeat;background-position:0 0;padding-left:20px;}
+
+/*contestualizzazione pulsante EVIDENZIATO*/
+.highlighted input, .highlighted a,
+.highlighted a:link, .highlighted a:hover,
+.highlighted a:active, .highlighted a:visited {background:#EBEFF0 url(/ris/resources/global_share/css/im/sfondo_pulsante_nav.gif) 50% 100% repeat-x;}
+span.highlighted {background:#EBEFF0 url(/ris/resources/global_share/css/im/sfondo_pulsante_nav.gif) 50% 100% repeat-x;}
+span.highlighted input, span.highlighted a,
+span.highlighted a:link, span.highlighted a:hover,
+span.highlighted a:active, span.highlighted a:visited {background:none;}
+
+/*contestualizzione per funzioni annulla e salva*/
+div.commandPanel span.cancel {background:#fff;}
+span.save input, span.save a, span.save a:link, span.save a:hover,
+span.save a:active, span.save a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_salva.gif) 0 50% no-repeat;padding-left:20px;}
+span.cancel {border:1px solid #A0A5AB;}
+span.back input, span.back a, span.back a:link, span.back a:hover,
+span.back a:active, span.back a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_back.gif) 0 50% no-repeat;padding-left:9px;}
+span.go input, span.go a, span.go a:link, span.go a:hover,
+span.go a:active, span.go a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_go.gif) 100% 50% no-repeat;padding-right:10px;}
+
+/*contestualizzazione spazi funzioni in COMMAND PANEL*/
+div.commandPanel span.esporta_xls a, div.commandPanel span.esporta_xls a:link, div.commandPanel span.esporta_xls a:hover,
+div.commandPanel span.esporta_xls a:active, div.commandPanel span.esporta_xls a:visited,
+div.commandPanel span.esporta_doc a, div.commandPanel span.esporta_doc a:link, div.commandPanel span.esporta_doc a:hover,
+div.commandPanel span.esporta_doc a:active, div.commandPanel span.esporta_doc a:visited,
+div.commandPanel span.esporta_pdf a, div.commandPanel span.esporta_pdf a:link, div.commandPanel span.esporta_pdf a:hover,
+div.commandPanel span.esporta_pdf a:active, div.commandPanel span.esporta_pdf a:visited,
+div.commandPanel span.detail a, div.commandPanel span.detail a:link, div.commandPanel span.detail a:hover, 
+div.commandPanel span.detail a:active, div.commandPanel span.detail a:visited,
+div.commandPanel span.edit a, div.commandPanel edit.send a:link, div.commandPanel edit.send a:hover, 
+div.commandPanel span.edit a:active, div.commandPanel edit.send a:visited, 
+div.commandPanel span.send a, div.commandPanel span.send a:link, div.commandPanel span.send a:hover, 
+div.commandPanel span.send a:active, div.commandPanel span.send a:visited, 
+div.commandPanel span.compilation a, div.commandPanel span.compilation a:link, div.commandPanel span.compilation a:hover, 
+div.commandPanel span.compilation a:active, div.commandPanel span.compilation a:visited, 
+div.commandPanel span.draft a, div.commandPanel span.draft a:link, div.commandPanel span.draft a:hover, 
+div.commandPanel span.draft a:active, div.commandPanel span.draft a:visited, 
+div.commandPanel span.download a, div.commandPanel span.download a:link, div.commandPanel span.download a:hover, 
+div.commandPanel span.download a:active, div.commandPanel span.download a:visited {padding-left:21px;}
+
+/*contestualizzazione altre FUNZIONI SPECIFICHE*/
+span.esporta_doc input, span.esporta_doc a, span.esporta_doc a:link, span.esporta_doc a:hover,
+span.esporta_doc a:active, span.esporta_doc a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_doc.gif) 0 50% no-repeat;padding-left:16px;}
+span.esporta_xls input, span.esporta_xls a, span.esporta_xls a:link, span.esporta_xls a:hover,
+span.esporta_xls a:active, span.esporta_xls a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_xls.gif) 0 50% no-repeat;padding-left:16px;}
+span.esporta_pdf input, span.esporta_pdf a, span.esporta_pdf a:link, span.esporta_pdf a:hover,
+span.esporta_pdf a:active, span.esporta_pdf a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_pdf.gif) 0 50% no-repeat;padding-left:16px;}
+span.detail input, span.detail button, span.detail a, span.detail a:link, span.detail a:hover,
+span.detail a:active, span.detail a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_detail.gif) 0 50% no-repeat;padding-left:18px;}
+span.edit input, span.edit button, span.edit a, span.edit a:link, span.edit a:hover,
+span.edit a:active, span.edit a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_modifica.gif) 0 50% no-repeat;padding-left:16px;padding-top:2px;}
+span.send input, span.send a, span.send a:link, span.send a:hover,
+span.send a:active, span.send a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_send.gif) 0 50% no-repeat;padding-left:14px;padding-top:2px;}
+span.compilation input, span.compilation a, span.compilation a:link, span.compilation a:hover,
+span.compilation a:active, span.compilation a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_compilation.gif) 0 50% no-repeat;padding-left:21px;}
+span.draft input, span.draft a, span.draft a:link, span.draft a:hover,
+span.draft a:active, span.draft a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_draft.gif) 0 50% no-repeat;padding-left:16px;}
+span.download input, span.download a, span.download a:link, span.download a:hover,
+span.download a:active, span.download a:visited {background:transparent url(/ris/resources/global_share/css/im/ico_download.gif) 0 50% no-repeat;padding-left:16px;}
+span.print input, span.print button, span.print a, span.print a:link, span.print a:hover,
+span.print a:active, span.print a:visited {background:transparent url(/ris/resources/global_share/css/jquery/im/ico_print.gif) no-repeat scroll 0 50%!important;
+padding-left:18px;}

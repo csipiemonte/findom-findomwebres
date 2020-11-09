@@ -1,0 +1,25 @@
+/*
+#-------------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-------------------------------------------------------------------------------
+*/
+
+/*RICHIAMO DI TUTTI I CSS JQUERY DI SOVRASCRITTURA SP*/
+
+@import url(/ris/resources/global/css/jquery/ui-1.8.24/jquery-ui-skin_SP.css);
+@import url(/ris/resources/global/css/jquery/superfish_SP.css);
+@import url(/ris/resources/global/css/jquery/superfish-dropdown_SP.css);
+@import url(/ris/resources/global/css/jquery/superfish-navbar_SP.css);
+@import url(/ris/resources/global/css/jquery/inputfocus_SP.css);
+@import url(/ris/resources/global/css/jquery/ytoggle_SP.css);
+@import url(/ris/resources/global/css/jquery/overouttr_SP.css);
+
+@import url(/ris/resources/application/finanziamenti/findomweb/css/jquery/jqtooltip_legenda.css);
+
+
+ul.sf-menu li.sfHover, ul.sf-menu li a:hover, ul.sf-menu li.active a.sf-with-ul, ul.sf-menu li.active a.sf-with-ul:link, ul.sf-menu li.active a.sf-with-ul:active, ul.sf-menu li.active a.sf-with-ul:visited, ul.sf-menu ul.active li.active a.sf-with-ul, ul.sf-menu ul.active li.active a.sf-with-ul:link, ul.sf-menu ul.active li.active a.sf-with-ul:active, ul.sf-menu ul.active li.active a.sf-with-ul:visited, ul.sf-menu li#current {background-color:#1E4F77}
+
+.stato_non_compilato span.txtTooltip span.txt_visibile, 
+.stato_compilato span.txtTooltip span.txt_visibile, 
+.stato_in_corso span.txtTooltip span.txt_visibile {left: auto; right: 3px;}

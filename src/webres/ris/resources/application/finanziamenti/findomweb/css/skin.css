@@ -1,0 +1,247 @@
+/*
+#-------------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-------------------------------------------------------------------------------
+*/
+
+/*SKIN SPECIFICO DEL SERVIZIO*/
+/*esplodere i css che si implementano*/
+
+@import url(/ris/resources/global_share/css/snippets/menu.css);
+@import url(/ris/resources/global_share/css/snippets/menu_verticale.css);
+@import url(/ris/resources/global_share/css/snippets/glossary.css);
+@import url(/ris/resources/global_share/css/snippets/msg_help_form.css);
+@import url(/ris/resources/global_share/css/snippets/inlinevalidation_error.css);
+
+/*SOVRASCRITTURA SP*/
+@import url(/ris/resources/global/css/snippets/menu_SP.css);
+@import url(/ris/resources/global/css/snippets/menu_verticale_SP.css);
+@import url(/ris/resources/global/css/snippets/glossary_SP.css);
+
+
+.ui-dialog-content #dialog_target span.close_js, 
+.ui-dialog-content #dialog_target span.print_js {
+    display: block!important;
+}
+
+/*class disattivo menu*/
+ul.sf-menu li.disattivo {border-right:1px solid #fff;}
+ul.sf-menu li.disattivo span {color:#aaa;}
+
+/*user panel Application*/
+#userAppPanel {/*border-top:3px solid #fff;border-bottom:3px solid #fff;*/overflow:hidden;width:100%;
+background-color:#fff;border-bottom:1px solid #B3B2C0;
+background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_utente.gif");
+background-repeat:no-repeat;background-position:8px 50%;}
+#userAppPanel .userAppData {font-weight:normal;width:55%;float:left;padding-left:36px;}
+#userAppPanel .userAppData span {font-weight:bold;padding-left:0px;}
+#userAppPanel span.value {font-weight:normal;padding-left:5px;padding-right:10px}
+#userAppPanel .commandPanel {width:35%;float:right;}
+#userAppPanel .userAppData {padding-top:6px;padding-bottom:2px}
+#userAppPanel .commandPanel {padding-top:4px;padding-bottom:4px}
+#userAppPanel .commandPanel .right span {margin-right: 8px;margin-left:0}
+
+.tabSetPanel {margin-bottom:0}
+
+
+/* ------------------------------------ */
+
+input[readonly], textarea[readonly], checkbox[readonly], radio[readonly] {background-color:#E6E7E6}
+
+/*tabelle*/
+tr.even td {background-color:#ddd}
+/*cella evidenziata*/
+td.bloccante, tr.even td.bloccante {background-color:#FF8080}
+.show-hide {display:none}/*jquery style check 'visualizza anomalie bloccanti'*/
+
+/*elementi in piu a fianco a titolo caption apri/chiudi*/
+h4.caption span.descr {font-weight:normal;padding-left:5px}
+h4.caption {overflow:hidden;width:auto!important;width:96.5%}
+h4.caption span.numTotTitle, h4.caption a.numTotTitle, h4.caption a.numTotTitle:link, h4.caption a.numTotTitle:active, h4.caption a.numTotTitle:hover, h4.caption a.numTotTitle:visited{float:left;width:80%}
+h4.caption span.numTot {background-color:#ccc;padding:2px 4px;float:right;background-color:#657189;color:#fff}
+
+#contextPanel #contextMenu a.dialog-glossary {padding-left: 28px;
+background: url("/ris/resources/global/css/im/ico_glossary.gif") no-repeat scroll 5px 50% transparent;}
+
+/*form di tabella form evidenziati*/
+div.tabSetPanel div.content_caption table.formTable tr.highlightedLine th,
+table.formTable tr.highlightedLine th,
+table.formTable tr.highlightedLine td {background-color: #E9EBEA;}
+
+/*allineamento contenuti content_caption */
+.content_caption .feedInfo, .content_caption .stdMessagePanel div.boxDX {width:auto;overflow:hidden}
+.content_caption .stdMessagePanel p.boxSX {width:25%;float:left;font-size:1.4em}
+.content_caption .stdMessagePanel div.boxDX {width:70%;float:right;}
+.content_caption .stdMessagePanel div.boxDX ul {float:left;width:40%}
+.content_caption .stdMessagePanel .boxDX, .content_caption .stdMessagePanel .boxSX, .content_caption .stdMessagePanel,
+.content_caption div.stdMessagePanel div.feedInfo {margin-bottom:0}
+
+input[type="submit"]:disabled {color:#8B8B8E;cursor:default} 
+
+/*allineamento contenuti elenco Indice*/
+.indexStep td p {margin-bottom:0;position:relative}
+.indexStep td p span.txt_visibile {top:20px;right:0;}
+
+
+.commandPanel span input.stato_da_eseguire,
+.commandPanel span input.stato_eseguito_errori,
+.commandPanel span input.stato_eseguito_no_errori,
+.commandPanel span input.stato_eseguito_warning,
+.commandPanel span input.stato_inviata {background-position: 0% 50%;background-repeat:no-repeat;padding-left:20px}
+/*STATI di VALIDAZIONE*/
+.commandPanel span input.stato_da_eseguire {background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/stato_da_eseguire.gif");}
+.commandPanel span input.stato_eseguito_errori {background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/stato_eseguito_errori.gif");}
+.commandPanel span input.stato_eseguito_no_errori {background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/stato_eseguito_no_errori.gif");}
+.commandPanel span input.stato_eseguito_warning {background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/stato_eseguito_warning.gif");}
+/*STATO INVIO*/
+.commandPanel span input.stato_inviata {background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/stato_inviata.gif");color:#4C9646}
+
+
+/*area check x dichiarazioni*/
+.listaCheck  p {overflow:hidden;margin-bottom:12px;width:99%}
+.listaCheck span.check {margin-left:20px;display:inline-block;float:left;border:0px solid red}
+.listaCheck label {display:inline-block;width:95%;float:right;border:0px solid green;}
+.listaCheck span.check, .listaCheck label {padding-top:4px;padding-bottom:3px}
+.listaCheck p.nocheck label {float:none;width:auto;}
+.listaCheck .error, .listaCheck .warning {border: 1px solid red;}
+
+/*caption e content_caption dentro tab*/
+div.tabSetPanel h4.caption,
+div.tabSetPanel div.content_caption {margin-left: 0px;margin-right: 0px;}
+div.tabSetPanel div.content_caption {padding-left:10px;padding-right:10px;}
+div.tabSetPanel div.content_caption table.formTable th, div.tabSetPanel div.content_caption table.formTableUniversal th {background-color: #fff;}
+
+/*contenuti dentro content_caption dentro a tab*/
+div.tabSetPanel div.content_caption td.tabdetail table.formTable th, 
+div.tabSetPanel div.content_caption td.tabdetail table.formTableUniversal th {background-color: transparent;}
+
+/*contenuti dentro dialog*/
+div.dialogPanel table.formTable th {background-color:#E9EBEA}
+
+
+/*icone*/
+#contextPanel #contextMenu a.dialog-glossary, 
+#contextPanel #contextMenu a.dialog-glossary:link, 
+#contextPanel #contextMenu a.dialog-glossary:active, 
+#contextPanel #contextMenu a.dialog-glossary:visited, 
+#contextPanel #contextMenu a.dialog-glossary:hover {
+    background: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_glossary.gif") no-repeat scroll 5px 50% transparent;
+    padding-left: 26px;
+}
+
+
+/*spazi*/
+.spaceBottom {margin-bottom:8px} /*usato su i radio luogo nascita anagrafica*/
+
+
+/*paginazione*/
+
+span.previousPageFirst a, span.nextPageLast a,
+span.previousPageFirst a:link, span.nextPage
+Last a:link,
+span.previousPageFirst a:visited, span.nextPageLast a:visited,
+span.previousPageFirst a:hover, span.nextPageLast a:hover,
+span.previousPageFirst a:active, span.nextPageLast a:active {text-decoration:none;}
+
+span.previousPageFirst a,span.previousPageFirst a:link,span.previousPageFirst a:visited,span.previousPageFirst a:hover, 
+span.previousPageFirst a:active {padding-left:10px;margin-right:8px;background:transparent url(/ris/resources/application/finanziamenti/findomweb/css/im/ico_freccia_prima.gif) 0% 50% no-repeat;}
+span.nextPageLast a,span.nextPageLast a:link,span.nextPageLast a:visited,span.nextPageLast a:hover,span.nextPageLast a:active {padding-right:14px;margin-left:8px;background:transparent url(/ris/resources/application/finanziamenti/findomweb/css/im/ico_freccia_ultima.gif) 100% 50% no-repeat;}
+
+span.pageDisPrevFist {padding-left:10px;margin-right:8px;background:transparent url(/ris/resources/application/finanziamenti/findomweb/css/im/ico_freccia_prima_dis.gif) 0% 50% no-repeat;}
+span.pageDisNextLast {padding-right:10px;margin-left:8px;background:transparent url(/ris/resources/application/finanziamenti/findomweb/css/im/ico_freccia_ultima_dis.gif) 100% 50% no-repeat;}
+
+span.number {margin-right: 0;}
+
+span.number span.highlighted,
+.paginazione .number a {margin-left:4px;margin-right:4px}
+span.number span.highlighted {background-color:#327CB9;color:#fff}
+span.number a:hover {background-color:#E0E9F2}
+
+/*new icon*/
+table span.double a, table span.double a:link, table span.double a:hover, table span.double a:active, table span.double a:visited,
+table span.nocancel {display: inline-block;width:32px;height:32px;background-size:99% auto;padding-left:0;}
+table span.double a, table span.double a:link, table span.double a:active, table span.double a:hover, table span.double a:visited {background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_double.png");}
+table span.nocancel {background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_no_elimina.png")}
+
+/*special breadcumb*/
+.breadCrumbIn {font-size:0.95em;margin-bottom:18px}
+
+.boxAlter {border:1px solid #566374;padding:10px;margin-bottom:16px}
+.boxAlter table {margin-bottom:8px}
+
+/*pagina indice*/
+p.riga_1, p.riga_2 {font-size:0.8em; background:#082D4B;color:#fff;margin:0;padding:6px}
+p.riga_1 {}
+p.riga_2 {margin-bottom:15px}
+
+/*segnalazione*/
+table td .warning {border: 1px solid #FFB400;}
+
+/*help box indice*/
+.content_caption div.stdMessagePanel div.feedInfo .boxDX {margin-bottom:15px}
+p.helpInfo {clear:both;/*color:#000*/}
+p.helpInfo a {color:#000}
+p.helpInfo span.esporta_pdf a, p.helpInfo span.esporta_pdf a:link, p.helpInfo span.esporta_pdf a:hover, p.helpInfo span.esporta_pdf a:active, p.helpInfo span.esporta_pdf a:visited {background-position: 0 50%;background-repeat: no-repeat;background-size: 40px auto;padding: 20px 20px 20px 40px}
+p.helpInfo span.esporta_pdf a:hover {opacity:0.8;}
+
+
+h3 {position:relative}
+h3 .esporta_pdf {display:inline-block;position:absolute;right:0}
+.esporta_pdf a {}
+h3 span.esporta_pdf a, 
+h3 span.esporta_pdf a:link,
+h3 span.esporta_pdf a:hover, 
+h3 span.esporta_pdf a:active,
+h3 span.esporta_pdf a:visited {
+color:#fff;font-size:0.85em;font-weight:normal;text-decoration:none;padding-left: 20px;}
+
+table span.save input, table span.save button, table span.save a, table span.save a:link, table span.save a:hover, table span.save a:active, table span.save a:visited{
+    padding-left: 16px;
+    padding-top: 2px;
+	display: inline-block;
+    height: 16px;
+    width: 0;
+}
+
+span.save input, span.save a, span.save a:link, span.save a:hover, span.save a:active, span.save a:visited {
+    background-image: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_save_button.gif");
+}
+
+table span.addrows input, table span.addrows button, table span.addrows a, table span.addrows a:link, table span.addrows a:hover, table span.addrows a:active, table span.addrows a:visited{
+    padding-left: 16px;
+    padding-top: 2px;
+	display: inline-block;
+    height: 16px;
+    width: 0;
+	
+}
+
+span.addrows input, span.addrows a, span.addrows a:link, span.addrows a:hover, span.addrows a:active, span.addrows a:visited {
+    background: url("/ris/resources/application/finanziamenti/findomweb/css/im/ico_add_button.gif") 0 2px no-repeat;  padding-left: 20px;
+}
+
+div.stdMessagePanel.allPage {margin:8px;}
+div.stdMessagePanel.allPage div.feedWarning {padding-top:6px;padding-bottom:6px; background-position: 22px 0;}
+
+/*per nascondere gli hidden=hidden su ie7 e inferiori*/
+input.hidden {clear: none;height: 0;left: -10000px;position: absolute;top: -10000px;width: 0;z-index: 51;}
+[hidden=true],[hidden=hidden] {display:none;}
+[hidden=false] {display:block;}
+
+h3 a.toggle_handle, h3 a.toggle_handle:link, h3 a.toggle_handle:active, h3 a.toggle_handle:hover, h3 a.toggle_handle:visited, h4 a.toggle_handle, h4 a.toggle_handle:link, h4 a.toggle_handle:active, h4 a.toggle_handle:hover, h4 a.toggle_handle:visited {
+    color: #000 !important;
+}
+/*---------------------------------------*/
+#contextPanel #contextMenu a, 
+#contextPanel #contextMenu a:link, 
+#contextPanel #contextMenu a:active, 
+#contextPanel #contextMenu a:visited, 
+#contextPanel #contextMenu a:hover {
+    padding: 4px;
+}
+#idlistaImprese th:first-child {width:10px;}
+
+
+/*.idleField {padding: 3px;}
+th label {display: block;padding: 4px 0;}*/

@@ -1,0 +1,117 @@
+/*
+#-----------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-----------------------------------------------------------------------------
+*/
+
+/* INIZIO  superfish-navbar.css */
+
+/*** adding the class sf-navbar in addition to sf-menu creates an all-horizontal nav-bar menu ***/
+
+.menuOrizzontal {/*border-top:3px solid #fff;*/
+background: url("/ris/resources/global/css/jquery/im/superfish/sfondo_menu_2liv.gif") repeat-x scroll 0 0 #e9ebea;}
+ul.sf-navbar {background: url("/ris/resources/global/css/jquery/im/superfish/sfondo_menu_2liv.gif") repeat-x scroll 0 0 #e9ebea; 
+/*border-bottom:10px solid #ccc;*/padding-bottom:1.3em;
+margin-bottom:8px;}
+#centerPanel {clear:both}
+
+ul.sf-navbar li li#current span,
+ul.sf-navbar li li a, 
+ul.sf-navbar li li a:link, 
+ul.sf-navbar li li a:active,
+ul.sf-navbar li li a:hover,  
+ul.sf-navbar li li a:visited {padding: 0.3em 1.1em 0.3em 1.1em!important;}
+
+ul.sf-navbar li li#current span, 
+ul.sf-navbar li li span.parent, 
+ul.sf-navbar li li a, 
+ul.sf-navbar li li a:link, 
+ul.sf-navbar li li a:active, 
+ul.sf-navbar li li a:hover, 
+ul.sf-navbar li li a:visited {background-position: 4px 50%}
+
+ul.sf-navbar li li li#current span, 
+ul.sf-navbar li li li span.parent, 
+ul.sf-navbar li li li a, 
+ul.sf-navbar li li li a:link, 
+ul.sf-navbar li li li a:active, 
+ul.sf-navbar li li li a:hover, 
+ul.sf-navbar li li li a:visited {background-position: 4px 50%}
+
+ul.sf-navbar li.sfHover li.active-parent a.sf-with-ul,
+ul.sf-navbar li.sfHover li.active-parent a.sf-with-ul:link,
+ul.sf-navbar li.sfHover li.active-parent a.sf-with-ul:active,
+ul.sf-navbar li.sfHover li.active-parent a.sf-with-ul:visited {background-image: url("/ris/resources/global/css/jquery/im/superfish/ico_menu_2liv_parent.gif");background-color:#ccc;color:#000;}
+
+ul.sf-navbar li.sfHover li.active-parent.sfHover a.sf-with-ul,
+ul.sf-navbar li.sfHover li.active-parent.sfHover a.sf-with-ul:link,
+ul.sf-navbar li.sfHover li.active-parent.sfHover a.sf-with-ul:active,
+ul.sf-navbar li.sfHover li.active-parent.sfHover a.sf-with-ul:visited {background-image: url("/ris/resources/global/css/jquery/im/superfish/ico_menu_2liv_open.gif");
+background-position: 4px 50%;}
+
+ul.sf-navbar li.sfHover a.sf-with-ul, 
+ul.sf-navbar li.sfHover a.sf-with-ul:link, 
+ul.sf-navbar li.sfHover a.sf-with-ul:active, 
+ul.sf-navbar li.sfHover a.sf-with-ul:hover, 
+ul.sf-navbar li.sfHover a.sf-with-ul:visited {background-color:#082843}
+
+ul.sf-navbar li.sfHover li a.sf-with-ul, 
+ul.sf-navbar li.sfHover li a.sf-with-ul:link, 
+ul.sf-navbar li.sfHover li a.sf-with-ul:active, 
+ul.sf-navbar li.sfHover li a.sf-with-ul:visited {background-color:#E9EBEA}
+
+ul.sf-navbar li.sfHover li a.sf-with-ul:hover,
+ul.sf-navbar li.sfHover li.sfHover a.sf-with-ul, 
+ul.sf-navbar li.sfHover li.sfHover a.sf-with-ul:link, 
+ul.sf-navbar li.sfHover li.sfHover a.sf-with-ul:active, 
+ul.sf-navbar li.sfHover li.sfHover a.sf-with-ul:visited,
+ul.sf-navbar li.sfHover li.sfHover a.sf-with-ul:hover, 
+ul.sf-navbar li li span.parent, ul.sf-navbar li li li,
+ul.sf-menu li.sfHover li a:hover {background-color:#ccc}
+
+ul.sf-menu li.sfHover li.sfHover a:hover,
+ul.sf-menu li.sfHover li li a:hover 
+ul.sf-navbar li li li a:hover,  
+ul.sf-navbar li li li#current {background-color:#E9EBEA}
+
+ul.sf-navbar a, ul.sf-navbar a:link, ul.sf-navbar a:active, ul.sf-navbar a:hover, ul.sf-navbar a:visited {border-right: 1px solid #E9EBEA;}
+
+ul.sf-navbar li#current span,
+ul.sf-navbar li a, ul.sf-navbar li a:link, ul.sf-navbar li a:active, ul.sf-navbar li a:visited, ul.sf-navbar li a:hover{border-left:0}
+
+ul.sf-navbar li li a, 
+ul.sf-navbar li li a:link, 
+ul.sf-navbar li li a:active, 
+ul.sf-navbar li li a:visited {border-left: 1px solid #ccc}
+ul.sf-navbar li a, ul.sf-navbar li a:link, ul.sf-navbar li a:active,
+ul.sf-navbar li a:visited, ul.sf-navbar li a:hover {border-right: 1px solid #E9EBEA}
+
+ul.sf-navbar li li#current span,
+ul.sf-navbar li li a:hover,
+ul.sf-navbar li.sfHover li.active-parent a.sf-with-ul,
+ul.sf-navbar li.sfHover li.active-parent a.sf-with-ul:link,
+ul.sf-navbar li.sfHover li.active-parent a.sf-with-ul:active,
+ul.sf-navbar li.sfHover li.active-parent a.sf-with-ul:visited,
+ul.sf-navbar li li.sfHover a,
+ul.sf-navbar li li.sfHover a:link, 
+ul.sf-navbar li li.sfHover a:active, 
+ul.sf-navbar li li.sfHover a:hover, 
+ul.sf-navbar li li.sfHover a:visited {border-bottom: 1px solid #ccc}
+
+ul.sf-navbar li li#current span {border-left: 1px solid #ccc;border-right: 1px solid #ccc} 
+ul.sf-navbar li li a:hover {border-left: 1px solid #ccc;border-right: 1px solid #ccc}
+
+ul.sf-navbar li li a.sf-with-ul,
+ul.sf-navbar li li a.sf-with-ul:link, 
+ul.sf-navbar li li a.sf-with-ul:active, 
+ul.sf-navbar li li a.sf-with-ul:hover, 
+ul.sf-navbar li li a.sf-with-ul:visited {border-left: 1px solid #E9EBEA}
+
+ul.sf-navbar li li.sfHover a,
+ul.sf-navbar li li.sfHover a:link, 
+ul.sf-navbar li li.sfHover a:active, 
+ul.sf-navbar li li.sfHover a:hover, 
+ul.sf-navbar li li.sfHover a:visited {border-left: 1px solid #E9EBEA}
+
+/* FINE  superfish-navbar.css */

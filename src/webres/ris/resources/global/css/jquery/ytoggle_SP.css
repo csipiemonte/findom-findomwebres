@@ -1,0 +1,25 @@
+/*
+#-----------------------------------------------------------------------------
+# Copyright Regione Piemonte - 2020
+# SPDX-License-Identifier: EUPL-1.2-or-later
+#-----------------------------------------------------------------------------
+*/
+
+/* INIZIO ytoggle_SP.css */
+
+div.menuHome a.espandi, div.menuHome h3 a.espandi:link, div.menuHome h3 a.espandi:hover, div.menuHome h3 a.espandi:active, div.menuHome h3 a.espandi:visited, div.menuHome h3 a.collapse, div.menuHome h3 a.collapse:link, div.menuHome h3 a.collapse:hover, div.menuHome h3 a.collapse:active, div.menuHome h3 a.collapse:visited {padding-top: 3px; padding-bottom: 3px;}
+
+h3 a.toggle_handle, h3 a.toggle_handle:link, h3 a.toggle_handle:active, h3 a.toggle_handle:hover, h3 a.toggle_handle:visited,
+h4 a.toggle_handle, h4 a.toggle_handle:link, h4 a.toggle_handle:active, h4 a.toggle_handle:hover, h4 a.toggle_handle:visited {color:#1A4B74;padding-left: 18px;display:block;text-decoration:none}
+
+h4 a.espandi, h4 a.espandi:link, h4 a.espandi:active, h4 a.espandi:hover, h4 a.espandi:visited {background: url("/ris/resources/global_share/css/jquery/im/ui-1.8.24/ui-icons-default_accordion.gif") no-repeat scroll 3px 50% transparent;}
+h4 a.collapse, h4 a.collapse:link, h4 a.collapse:active, h4 a.collapse:hover, h4 a.collapse:visited {background: url("/ris/resources/global_share/css/jquery/im/ui-1.8.24/ui-icons-active_accordion.gif") no-repeat scroll 3px 50% transparent;}
+
+/*sprecifici homepage servizio*/
+.menuHome h3 a.toggle_handle, .menuHome h3 a.toggle_handle:link, .menuHome h3 a.toggle_handle:active, .menuHome h3 a.toggle_handle:hover, .menuHome h3 a.toggle_handle:visited {color:#333}
+
+span.openRecord a.collapse, span.openRecord a.collapse:link, span.openRecord a.collapse:hover,
+span.openRecord a.collapse:active, span.openRecord a.collapse:visited {background:transparent url(im/ytoggle/ico_tab_comprimi.gif) 0 50% no-repeat;padding-left:16px;}
+
+/* FINE ytoggle_SP.css */
+
